@@ -1,0 +1,199 @@
+/* Basic Reset & Defaults */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; color: #333; background-color: #f8f9fa; }
+.container { max-width: 1200px; margin: 0 auto; padding: 0 15px; }
+
+/* Header */
+header { background-color: #ffffff; padding: 1rem 0; border-bottom: 1px solid #e0e0e0; margin-bottom: 2rem; }
+.header-content { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; max-width: 90ch; margin: 0 auto; padding: 0 15px; }
+#header-name { font-size: 1.8rem; color: #212529; flex-shrink: 0; }
+#lang-switch { padding: 0.5rem 1rem; cursor: pointer; background-color: #007bff; color: white; border: none; border-radius: 4px; font-size: 0.9rem; transition: background-color 0.2s ease; }
+#lang-switch:hover { background-color: #0056b3; }
+
+/* Main Content Sections Wrapper */
+section { margin-bottom: 3rem; padding: 2rem; background-color: #ffffff; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
+section.content-section { max-width: 90ch; margin-left: auto; margin-right: auto; }
+
+/* Section Titles (Now primarily for Intro) */
+section.content-section > h2 { margin-bottom: 1.5rem; font-size: 1.6rem; color: #343a40; border-bottom: 2px solid #007bff; padding-bottom: 0.5rem; display: inline-block; }
+
+/* Sub-section Titles (e.g., Category Filter Title) */
+section h3 { margin-bottom: 1rem; font-size: 1.3rem; color: #495057; }
+
+/* Introduction Section */
+.intro-section { display: flex; align-items: center; gap: 2rem; flex-wrap: wrap; }
+.profile-pic { width: 180px; height: 180px; border-radius: 50%; object-fit: cover; flex-shrink: 0; border: 3px solid #dee2e6; }
+.intro-text { flex-grow: 1; flex-basis: 400px; }
+
+/* Teaser Section */
+.teaser-section { text-align: center; padding: 1rem 0; background-color: transparent; box-shadow: none; margin-bottom: 1rem; border-radius: 8px; }
+.teaser-animation, #teaser-video { max-width: 100%; height: auto; border-radius: 8px; margin-top: 1rem; display: block; margin-left: auto; margin-right: auto; border: 1px solid #e0e0e0; }
+
+/* Research Section Tabs */
+.tab-nav { display: flex; border-bottom: 2px solid #dee2e6; margin-bottom: 2rem; flex-wrap: wrap; }
+.tab-button { padding: 0.8rem 1.5rem; cursor: pointer; background-color: transparent; border: none; border-bottom: 3px solid transparent; margin-bottom: -2px; font-size: 1.35rem; color: #6c757d; transition: all 0.2s ease; text-align: center; }
+.tab-button:hover { color: #0056b3; }
+.tab-button.active { color: #007bff; border-bottom-color: #007bff; font-weight: bold; }
+
+.tab-pane {
+    display: none;
+    padding-top: 1rem;
+    /* *** Apply max-width and centering to the tab panes *** */
+    max-width: 85ch; /* Consistent width for primary content */
+    margin-left: auto;
+    margin-right: auto;
+}
+/* Adjust width specifically for contact/service if needed */
+#services-view, #contact-view {
+    max-width: 75ch; /* Slightly narrower for text-heavy sections */
+}
+.tab-pane.active { display: block; }
+
+
+/* Research Controls (Categories Only) */
+#research-controls { margin-bottom: 2rem; padding-bottom: 1.5rem; border-bottom: 1px solid #e0e0e0; }
+.control-group {}
+.filter-buttons { display: flex; flex-wrap: wrap; gap: 0.75rem; }
+.filter-buttons button { padding: 0.6rem 1rem; cursor: pointer; background-color: #e9ecef; color: #495057; border: 1px solid #ced4da; border-radius: 20px; font-size: 0.9rem; transition: all 0.2s ease; display: inline-flex; align-items: center; gap: 0.5rem; }
+.filter-buttons button.active, .filter-buttons button:hover { background-color: #007bff; color: white; border-color: #0056b3; }
+.filter-buttons button img { height: 20px; width: 20px; object-fit: contain; }
+
+/* Projects List */
+.projects-container { display: grid; gap: 2rem; }
+.project-card {
+    background-color: #f8f9fa; border: 1px solid #e9ecef; border-radius: 8px; padding: 1.5rem; transition: box-shadow 0.3s ease;
+    /* max-width: 85ch; */ /* REMOVED: Width controlled by tab-pane */
+    /* margin-left: auto; */  /* REMOVED: Centering controlled by tab-pane */
+    /* margin-right: auto; */
+}
+.project-card:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+.project-card h4 { font-size: 1.25rem; margin-bottom: 1rem; color: #0056b3; }
+.project-images { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-bottom: 1rem; align-items: flex-start; }
+.project-images img { height: 150px; width: auto; border-radius: 4px; border: 1px solid #dee2e6; object-fit: contain; }
+.project-header-info { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem 1rem; margin-bottom: 1rem; }
+.project-categories { flex-grow: 1; }
+.project-categories span { display: inline-block; background-color: #e2e3e5; color: #6c757d; padding: 0.2em 0.6em; border-radius: 4px; font-size: 0.85rem; margin-right: 0.5rem; margin-bottom: 0.3rem; }
+.project-institution { display: inline-flex; align-items: center; gap: 0.3rem; margin-left: auto; flex-shrink: 0; }
+.project-institution img { height: 28px; vertical-align: middle; margin-right: 0; }
+.project-institution a { vertical-align: middle; line-height: 0; }
+.project-description { margin-bottom: 1.5rem; font-size: 0.95rem; color: #495057; }
+.project-publications h5 { font-size: 1rem; margin-top: 1.5rem; margin-bottom: 0.75rem; color: #343a40; font-weight: bold; }
+.project-publications ul { list-style: none; padding-left: 0; }
+.project-publications li { margin-bottom: 1rem; padding-left: 1.5rem; position: relative; font-size: 0.9rem; }
+.project-publications li::before { content: var(--item-icon, "📄"); position: absolute; left: 0; top: 0.1em; font-size: 0.9em; line-height: 1; }
+.pub-title { font-weight: bold; display: block; margin-bottom: 0.2rem; }
+.pub-authors, .pub-venue { display: block; margin-bottom: 0.2rem; color: #6c757d; font-size: 0.85rem; }
+.pub-links { margin-top: 0.3rem; display: flex; align-items: center; gap: 0.75rem; }
+.pub-links a { margin-right: 0; text-decoration: none; color: #007bff; font-weight: bold; font-size: 0.85rem; display: inline-flex; align-items: center; line-height: 1; }
+.pub-links a:hover { opacity: 0.7; }
+.link-icon { height: 1.3em; width: auto; vertical-align: middle; }
+.pub-links a[href*="doi.org"] { font-weight: normal; font-size: 0.8rem; }
+
+/* Publication List */
+.publications-list-container { list-style: none; padding-left: 0; }
+.publications-list-container li {
+    padding: 0.8rem 0; border-bottom: 1px solid #e9ecef;
+    /* max-width: 85ch; */ /* REMOVED: Width controlled by tab-pane */
+    /* margin-left: auto; */  /* REMOVED: Centering controlled by tab-pane */
+    /* margin-right: auto; */
+}
+.publications-list-container li:last-child { border-bottom: none; }
+.publications-list-container li.year-header {
+    /* max-width: 85ch; */ /* REMOVED */
+    /* margin-left: auto; */ /* REMOVED */
+    /* margin-right: auto; */
+    border-bottom: none !important;
+}
+.publications-list-container .pub-year { display: block; font-weight: bold; margin-bottom: 0.3rem; margin-top: 1rem; color: #343a40; font-size: 1.05rem; padding-top: 0.5rem; }
+.publications-list-container li:first-child .pub-year { margin-top: 0; }
+.publications-list-container .pub-details { margin-left: 0; font-size: 0.95rem; position: relative; padding-left: 2em; }
+.publications-list-container .pub-details::before { content: var(--item-icon, "📄"); position: absolute; left: 0; top: 0.1em; font-size: 1em; line-height: 1.6; width: 1.5em; text-align: center; }
+.publications-list-container .pub-details .pub-title { font-weight: bold; display: block; margin-bottom: 0.2rem; }
+.publications-list-container .pub-details .pub-authors,
+.publications-list-container .pub-details .pub-venue { display: block; margin-bottom: 0.2rem; color: #6c757d; font-size: 0.9rem; }
+.pub-notes { display: block; font-size: 0.85rem; font-style: italic; color: #007bff; margin-top: 0.4rem; }
+
+/* Patents Section (Subsection within Pubs Tab) */
+section#patents.subsection {
+    margin-bottom: 0; padding: 0; background-color: transparent; border-radius: 0; box-shadow: none; margin-top: 3rem;
+    /* max-width: 85ch; */ /* REMOVED: Width controlled by parent tab-pane */
+    /* margin-left: auto; */ /* REMOVED */
+    /* margin-right: auto; */
+}
+section#patents.subsection h2 { font-size: 1.4rem; color: #343a40; padding-bottom: 0.5rem; display: block; margin-bottom: 1.5rem; text-align: left; }
+.patents-container { list-style: none; padding-left: 0; }
+.patents-container li {
+    margin-bottom: 1rem; padding: 1rem; background-color: #f8f9fa; border: 1px solid #e9ecef; border-radius: 4px;
+    /* No max-width/margin needed here, constrained by parent */
+}
+.patents-container li .pub-details::before { content: var(--item-icon, "⚖️"); }
+.patent-title { font-weight: bold; display: block; margin-bottom: 0.3rem; }
+.patent-details { font-size: 0.9rem; color: #6c757d; }
+.patent-details a { color: #007bff; text-decoration: none; word-break: break-all; }
+.patent-details a:hover { text-decoration: underline; }
+.patent-notes { font-size: 0.85rem; margin-top: 0.5rem; color: #6c757d; }
+
+/* Service Description Tab Pane */
+#services-view {}
+#services-title {
+    margin-bottom: 1.5rem; font-size: 1.6rem; color: #343a40;
+    border-bottom: 2px solid #007bff; padding-bottom: 0.5rem; display: inline-block;
+}
+#services-content {
+    /* max-width: 75ch; */ /* REMOVED: Width controlled by tab-pane */
+    /* margin: 1rem auto; */ /* REMOVED: Centering controlled by tab-pane */
+    margin-top: 1rem; /* Add space below title */
+}
+#services-content h3 { font-size: 1.2rem; color: #0056b3; margin-top: 1.8rem; margin-bottom: 0.8rem; border-bottom: 1px solid #e0e0e0; padding-bottom: 0.3rem; }
+#services-content p { margin-bottom: 1rem; }
+#services-content ul, #services-content ol { margin-left: 2rem; margin-bottom: 1rem; }
+#services-content li { margin-bottom: 0.5rem; }
+#services-content strong { color: #343a40; }
+
+/* Contact Info (Now within Contact Tab Pane) */
+#contact-view {}
+.contact-info {
+    text-align: left;
+    /* max-width: 70ch; */ /* REMOVED: Width controlled by tab-pane */
+    /* margin: 0 auto; */ /* REMOVED: Centering controlled by tab-pane */
+    padding-top: 0; /* Remove extra padding */
+}
+.contact-info p { margin-bottom: 0.75rem; font-size: 1rem; }
+.contact-info a { color: #007bff; text-decoration: none; word-break: break-all; }
+.contact-info a:hover { text-decoration: underline; }
+
+/* Footer */
+footer { margin-top: 3rem; padding: 1.5rem 0; background-color: #343a40; color: #e9ecef; text-align: center; font-size: 0.9rem; }
+
+/* Responsive Design */
+@media (max-width: 992px) {
+     .header-content, section.content-section,
+     .tab-pane /* Apply to all panes */
+      { max-width: none; margin-left: 0; margin-right: 0; }
+      .header-content { padding: 0; }
+}
+@media (max-width: 768px) {
+    #header-name { font-size: 1.5rem; }
+    .intro-section { text-align: center; }
+     .profile-pic { width: 150px; height: 150px; }
+    #research-controls { flex-direction: column; gap: 1.5rem; }
+    .project-card { padding: 1rem; }
+     .project-header-info { gap: 0.5rem; }
+    .project-images img { height: 120px; }
+    section#patents.subsection { margin-top: 2rem; }
+     #services-content h3 { font-size: 1.1rem; }
+}
+@media (max-width: 480px) {
+     #header-name { font-size: 1.3rem; }
+    section { padding: 1.5rem 1rem; }
+     .profile-pic { width: 120px; height: 120px; }
+    .filter-buttons button { padding: 0.5rem 0.8rem; font-size: 0.85rem; }
+    .project-images img { height: 100px; }
+     .tab-button { font-size: 1.1rem; padding: 0.7rem 0.8rem;} /* Adjust padding */
+     .pub-links { gap: 0.5rem; }
+     .link-icon { height: 1.2em; }
+}
+
+/* Utility class */
+.hidden { display: none !important; }

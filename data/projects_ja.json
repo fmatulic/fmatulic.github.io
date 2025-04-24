@@ -1,0 +1,345 @@
+[
+  {
+    "id": "proj_archaracters",
+    "title": "ARとAIによる対話型キャラクター生成：日用品への命の吹き込み",
+    "description": "ARとAIを組み合わせ、身の回りの物体を知的な対話型キャラクターとして実体化させる研究です。ARヘッドセットやスマートフォンを通じて、ユーザーは現実の物体上に表示されるキャラクターと自然な対話を楽しむことができます。キャラクターは物体の特徴から個性を自動学習し、周囲の状況やユーザーの行動に応じて反応するため、現実世界に根差した文脈的で豊かなコミュニケーションが可能になります。",
+    "images": [
+      "projects/ARCharactersConcept.jpg",
+      "projects/ARCharacters.jpg"
+    ],
+    "institution_id": "pfn",
+    "categories": ["xr", "genai"],
+    "publication_ids": ["pub_chi25lbw_arc","pub_chi25w"]
+  },
+  {
+    "id": "proj_supinevr",
+    "title": "仰臥位姿勢でのVR作業環境に関する研究",
+    "description": "寝たままの姿勢でVRを用いた作業は効率的に行えるか、その実現可能性を探る研究です。第一段階として、着座姿勢と仰臥位姿勢でのタイピング及びポインティング操作のパフォーマンスを比較評価しました。本研究は、従来とは異なる姿勢での利用におけるVRのアクセシビリティや快適性向上に繋がるデザイン知見を提供することを目指します。",
+    "images": [
+      "projects/SupineVR.jpg"
+    ],
+    "institution_id": "pfn",
+    "categories": ["xr", "embodied"],
+    "publication_ids": ["pub_chi25lbw_svr"]
+  },
+  {
+    "id": "proj_desktopphonevr",
+    "title": "デスクトップVRにおけるスマートフォン連携によるタッチ検出精度の向上",
+    "description": "VRヘッドセット搭載のハンドトラッキングだけでは、机表面などへのタッチ入力精度が不十分な場合があります。本研究では、スマートフォンのカメラで指の接触を検出し、ヘッドセットのトラッキング情報と統合する手法を提案します。これによりヘッドセット単独の場合よりタッチ操作の精度は向上しますが、ハンドトラッキング自体の精度限界という課題は残ります。",
+    "images": [
+      "projects/DesktopPhoneVR.jpg"
+    ],
+    "institution_id": "pfn",
+    "categories": ["xr", "touch", "mobile", "cv", "ml"],
+    "publication_ids": ["pub_chi25lbw_pvr"]
+  },
+  {
+    "id": "proj_hci4ml",
+    "title": "機械学習プロセスを支援するHCI技術の研究開発",
+    "description": "ニューラルネットワーク等の機械学習モデルの訓練には、データ準備・前処理に多くの労力と専門知識が必要です。データラベリング、クリーニング、データ拡張（Augmentation）といった関連タスクを効率化・省力化するため、直感的で効率的なユーザーインターフェースや支援技術の研究開発を行っています。",
+    "images": [
+      "projects/MultiviewCapture.jpg",
+      "projects/DataAugment.jpg"
+    ],
+    "institution_id": "pfn",
+    "categories": ["ml", "cv"],
+    "publication_ids": ["pub_chi25lbw_ts","pub_iui25","pub_siggraphasia23tc", "pub_iss23", "pub_chi23lbw2"]
+  },
+  {
+    "id": "proj_dexterous",
+    "title": "モバイル端末の片手操作における巧緻な指ジェスチャーの研究",
+    "description": "指先の細やかな動きを利用して、スマートフォンなどのモバイル端末を片手で巧みに操るための「巧緻ジェスチャー」に関する研究です。「ずらす」「回す」「向きを変える」「裏返す」といった４種類の操作を取り上げ、３つのユーザースタディでその特性を分析しました。得られた知見に基づき、ジェスチャーとインタラクションの対応付けに関する設計指針や応用例を提案しています。",
+    "images": ["projects/PhoneDexterity.png"],
+    "institution_id": "pfn",
+    "categories": ["mobile", "embodied"],
+    "publication_ids": ["pub_chi23"]
+  },
+  {
+    "id": "proj_hybridvr",
+    "title": "デスクトップVR環境におけるペン・タッチ・空中操作のハイブリッド両手インタラクション",
+    "description": "ペンとタッチによる両手操作を、デスクトップVR環境における空中（ミッドエア）インタラクションへと拡張するハイブリッド入力のデザイン空間を探求します。特に、ペンと他方の手を組み合わせた非対称操作パターン（同一空間／空間横断／空間遷移）に着目し、3Dモデリング、ボリュームレンダリング、地形編集の３つの試作アプリケーションを通じて、具体的なインタラクション手法とジェスチャーの有効性を検証しました。",
+    "images": [
+      "projects/PenTouchMidair.png",
+      "projects/VRTerrainModelling.jpg"
+    ],
+    "institution_id": "pfn",
+    "categories": ["xr", "embodied", "pen","touch"],
+    "publication_ids": ["pub_gi23", "pub_chi22lbw"]
+  },
+  {
+    "id": "proj_typealike",
+    "title": "Typealike：キーボード近傍での手の姿勢を用いたラップトップPCインタラクション拡張",
+    "description": "Typealikeは、自然なタイピング姿勢に近い手の形を利用して、ラップトップPC上でコマンドを素早く実行するための手法です。この手の姿勢は、ラップトップのウェブカメラが下向きの鏡を通して捉えた画像を、ディープラーニングによる分類を用いて認識します。",
+    "images": ["projects/Typealike.png"],
+    "institution_id": "pfn",
+    "categories": ["ml", "cv", "embodied"],
+    "publication_ids": ["pub_iss21a"]
+  },
+  {
+    "id": "proj_phonevr",
+    "title": "VR内での視覚化のための手検出・追跡機能を持つスマートフォンVRコントローラー（上方ミラー方式）",
+    "description": "スマートフォンはVRコントローラーとして利用できますが、ヘッドセット装着中は端末や手元が見えないため、正確なタッチ入力は困難です。本研究では、スマートフォンの画面上方に１つまたは２つの鏡を取り付け、前面カメラが鏡の反射を通して手を捉えることでこの問題に取り組みます。単一ミラーの場合、カメラ映像をVR内のスマートフォンモデル画面上にテクスチャとして直接表示することで、ユーザーは指で正確に狙いを定めることができます。２つのミラーを用いる場合は、異なる角度から捉えた手の画像を基に、ディープラーニングを用いて指先の3D位置を追跡することが可能です。",
+    "images": [
+      "projects/Phonetroller.jpg",
+      "projects/PhoneVR2.jpg"
+    ],
+    "institution_id": "pfn",
+    "categories": ["xr", "mobile", "cv", "ml","touch"],
+    "publication_ids": ["pub_gi24", "pub_chi23lbw", "pub_chi21"]
+  },
+  {
+    "id": "proj_pensight",
+    "title": "PenSight：ペン上部カメラによるペンインタラクションの強化",
+    "description": "PenSightは、ペン上部に取り付け下向きにした魚眼レンズカメラを用いてタブレット上でのペンインタラクションを強化する新しいコンセプトです。この構成により、カメラは使用者の手や周囲の環境を「見る」ことができます。ディープラーニングを活用することで、様々な手の姿勢やタブレットの持ち方を認識し、アクションのクイック起動や、周囲の書類などタブレット外コンテンツの取り込みを可能にします。",
+    "images": ["projects/PenSight.jpg"],
+    "institution_id": "pfn",
+    "categories": ["pen", "cv", "ml"],
+    "publication_ids": ["pub_chi20", "pub_springer21"]
+  },
+  {
+    "id": "proj_penemg",
+    "title": "EMGアームバンドでの認識に適した、クイックアクション起動のための代替ペン保持姿勢の抽出",
+    "description": "本プロジェクトでは、アプリケーション内のアクションやショートカットを起動するために（例：ペンを持ったまま小指を伸ばしてメニューを呼び出す）、ユーザーがどのような代替的なデジタルペンの持ち方を選択するかを調査します。また、EMG（筋電）アームバンドから収集したデータとディープラーニングを用いて、これらの多様なペンの持ち方をどの程度正確に認識できるかについても検証します。",
+    "images": ["projects/PenEMGIcon.jpg"],
+    "institution_id": "pfn",
+    "categories": ["pen", "ml"],
+    "publication_ids": ["pub_iss19", "pub_springer21"]
+  },
+  {
+    "id": "proj_hri",
+    "title": "パーソナルロボットのためのヒューマン・ロボット・インタラクション",
+    "description": "スマートな家庭用ロボットは、未来の家庭における家事や日常業務のあり方を革新する可能性を秘めています。近年のディープラーニングと「人工知能」の急速な発展により、機械はますます複雑なタスクを自律的に実行できるようになりました。しかし、ロボットがいかに賢くなっても、人間との関わりは不可欠であり、そのインタラクションが円滑かつ安全に行われることが極めて重要です。私たちのヒューマン・ロボット・インタラクション研究は、エンドユーザー（顧客）が自宅でロボットを操作する際の支援を向上させるだけでなく、エンジニア、技術者、開発者によるロボットのプログラミングや学習を容易にすることも目指しています。",
+    "images": ["projects/HayateGesture.jpg"],
+    "institution_id": "pfn",
+    "categories": ["robotics", "ml"],
+    "publication_ids": ["pub_chi19lbw", "pub_chi19hcmlws","link_ceatec18"]
+  },
+  {
+    "id": "proj_colouraize",
+    "title": "ColourAIze：AI駆動型着色とインタラクティブ投影システムによる紙の描画の彩色",
+    "description": "ColourAIzeは、紙上の白黒線画を分析し、AIを用いて自動的に写実的な色を決定し、その色を線画内にプロジェクションするインタラクティブシステムです。複数の着色スタイルから選択できるほか、ユーザーは描画内の目的の領域に簡単なスタイラス操作を行うことで、局所的な色の好みをAIに指定できます。これにより、紙のスケッチや漫画などの公開された白黒アートワークに対して、可能性のある着色を即座にかつ直接的に確認することが可能になります。",
+    "images": ["projects/ColourAIze.jpg"],
+    "institution_id": "pfn",
+    "categories": ["genai", "cv","ml", "xr"],
+    "publication_ids": ["pub_iss18"]
+  },
+  {
+    "id": "proj_unimanualpt",
+    "title": "ペンの持ち方変化を利用した片手でのペン＆タッチ入力",
+    "description": "本研究では、タブレット上での筆記や描画中にペンの持ち方を変えることで、ペン機能の変更（例：選択、スクロール、検索）やその場でのメニュー呼び出しなど、様々なアクションを起動する方法を探求します。手の姿勢は、手が表面に接触した際に、タブレットの静電容量画像（rawタッチ入力データ）にディープ畳み込みニューラルネットワークを適用することで認識されます。このアプローチの実現可能性は、２つのユーザー評価によって確認されています。",
+    "images": ["projects/UnimanualPT.jpg"],
+    "institution_id": "pfn",
+    "categories": ["pen", "touch", "ml", "cv"],
+    "publication_ids": ["pub_uist18", "pub_springer21"]
+  },
+  {
+    "id": "proj_hybridpointing",
+    "title": "HybridPointing for Touch：大型タッチスクリーンにおける絶対・相対ポインティングの切り替え",
+    "description": "CursorTapは、ハイブリッドな絶対・相対ポインティングを用いて、大型壁面ディスプレイ上の近距離・遠距離両方のターゲットを効率的に選択するためのマルチタッチ技術です。ユーザーは片手の３本指で相対モードに切り替え、もう一方の手でタッチパッドのようにカーソルを操作します。",
+    "images": ["projects/HybridPointing.png"],
+    "institution_id": "waterloo",
+    "categories": ["large-displays", "touch"],
+    "publication_ids": ["pub_iss21b"]
+  },
+  {
+    "id": "proj_modeswitchvr",
+    "title": "VRにおける素手での空中モード切替技術",
+    "description": "本研究は、VR（仮想現実）に適した、素手による空中でのモード切替技術に関する実験的な比較を行います。具体的には、利き手の同じ動作（例：指の移動による仮想オブジェクトの移動）によって実行される操作の種類を、どのような手や指の姿勢（例：指をつまむ、手を回す、手を振る）で効率的に変更できるかを調査します。私たちの結果は、研究者や開発者がVRにおける素手での空中モード切替技術を選択または設計する際の指針を提供します。",
+    "images": ["projects/ModeSwitchVR.jpg"],
+    "institution_id": "waterloo",
+    "categories": ["xr", "embodied"],
+    "publication_ids": ["pub_chi19"]
+  },
+  {
+    "id": "proj_multiray",
+    "title": "Multiray：大型垂直ディスプレイのための多指レイキャスティング",
+    "description": "Multirayは、遠隔の垂直ディスプレイと対話するための単一レイキャスティングを、多指レイキャスティング、すなわち各指がディスプレイにレイを投影する方式へと拡張する概念です。特に、Multirayを用いると、手の姿勢によって作られるレイの交差パターンが2Dの幾何学的形状を形成し、単一点の選択を超えるアクションの起動や直接操作が可能になります。",
+    "images": ["projects/Multiray.jpg"],
+    "institution_id": "waterloo",
+    "categories": ["large-displays", "embodied"],
+    "publication_ids": ["pub_chi18"]
+  },
+  {
+    "id": "proj_modeswitchtouch",
+    "title": "タッチベースUIにおけるモード切替技術の実験的分析",
+    "description": "本プロジェクトでは、タッチ入力における異なる機能やモード間の切り替え（同じタッチ操作が生み出す結果を素早く変更する可能性）のパフォーマンスを調査します。長押し、非利き手、２本指、強く押す、指関節、指の上に親指を乗せる、という６つの技術を、座位および立位の条件下で評価しました。本研究は、タッチによるモード切替技術の効率に関する実証的証拠の不足に対応し、実践者や研究者が新しいモード切替手法を設計する際の指針を提供します。",
+    "images": ["projects/Modeswitch.jpg"],
+    "institution_id": "waterloo",
+    "categories": ["touch"],
+    "publication_ids": ["pub_chi17"]
+  },
+  {
+    "id": "proj_handposturewidgets",
+    "title": "手と指の姿勢に基づくテーブルトップウィジェットの呼び出しと制御",
+    "description": "テーブルトップインタラクションは、指先だけでなく手全体を入力として考慮することで、より豊かになります。本研究では、rawタッチ接触画像から手の接触形状を認識するための、単純かつ再現容易なコンピュータビジョンアルゴリズムを提案します。この技術は、静止している腕を除外し、指の動きやホバーといった動的な特性もサポートします。このアルゴリズムを用いて、メニューやツールウィジェットの起動、パラメータ設定、動的な制御を行います。",
+    "images": ["projects/PalmFingersFanMenu.jpg"],
+    "institution_id": "imld",
+    "categories": ["touch", "cv", "tabletop"],
+    "publication_ids": ["pub_iss17"]
+  },
+  {
+    "id": "proj_embodiedpres",
+    "title": "新規没入型プレゼンテーション体験のための身体的インタラクション",
+    "description": "本プロジェクトは、発表者をインタラクティブなアバターとしてプレゼンテーションコンテンツ内に統合することで、ライブマルチメディアプレゼンテーションを強化することを目指します。主に身体ジェスチャーなどのマルチモーダル入力を利用し、発表者は埋め込まれたアバターを制御します。これにより、仮想的なプレゼンテーション環境と詳細に対話することが可能となり、個々のプレゼンテーション要素やデータを仮想的な小道具として操作できます。この試みの目標は、ライブステージでのパフォーマンス（講演、講義など）や、オフィスや会議室のようなより限定されたエリアでのリモート会議向けに、新たな没入型プレゼンテーション体験を創出することです。",
+    "images": ["projects/EmbeddedPres.jpg"],
+    "institution_id": "imld",
+    "categories": ["embodied"],
+    "publication_ids": ["pub_chi16lbw_eip"]
+  },
+  {
+    "id": "proj_smartproj",
+    "title": "スマート・ユビキタス・プロジェクション：適応型コンテンツ投影のための適切な表面発見",
+    "description": "本研究では、ユビキタスプロジェクションの概念を再考します。あらゆる物理的な表面や物体をディスプレイと見なすのではなく、デジタル情報の投影とインタラクションに適した領域を特定することを目指します。これを実現するために、モバイルプロジェクターカメラユニット（プロカム）とコンピュータビジョン技術を使用し、投影に適した特性（均一、淡色、非反射、平面など）を持つ矩形の表面領域を自動的に検出します。次のステップとして、身体ベースのインタラクションを探求し、認識された領域内にコンテンツを適応的にレイアウトする方法を検討します。",
+    "images": ["projects/SmartProj.jpg"],
+    "institution_id": "imld",
+    "categories": ["cv"],
+    "publication_ids": ["pub_chi16lbw_sp"]
+  },
+  {
+    "id": "proj_bodylenses",
+    "title": "BodyLenses：壁面ディスプレイのための身体的マジックレンズとパーソナルテリトリー",
+    "description": "マジックレンズは、視覚データの局所的に変更されたビューを提供するための一般的なツールです。本研究では、主に身体インタラクションによって制御される壁面ディスプレイ用の特殊なマジックレンズである「BodyLenses」の概念を導入します。身体の位置、腕のジェスチャー、ディスプレイとの距離、そして画面上での古典的なマルチタッチ入力を用いて、レンズの位置、形状、機能、ツールの選択といったパラメータを、ユーザーが動的かつ直感的に変更する方法を示します。",
+    "images": ["projects/BodyLenses.jpg"],
+    "institution_id": "imld",
+    "categories": ["large-displays", "embodied"],
+    "publication_ids": ["pub_its15bl"]
+  },
+  {
+    "id": "proj_msrsensing",
+    "title": "タブレット＋スタイラスインタラクションのためのセンシング技術",
+    "description": "特殊なグリップおよび動きを感知するスタイラスと、グリップを感知するタブレットを使用し、ユーザーがペンやタブレットをどのように持っているかの検出、ペンを持っている手と持っていない手の区別、筆記中に静止した手のひらによるタッチの除去（パームリジェクション）、そしてこれらの異なる姿勢の検出から生じる多数のコンテキストに応じたジェスチャーを含む、新しいペン＆タッチインタラクションの範囲を探求します。",
+    "images": ["projects/MSRGripSensing.jpg"],
+    "institution_id": "msr",
+    "categories": ["pen", "touch", "mobile"],
+    "publication_ids": ["pub_uist14"]
+  },
+  {
+    "id": "proj_eyesfreewb",
+    "title": "ペンベース電子ホワイトボードのための、ハンドヘルドデバイスを用いたアイズフリータッチツールボックス",
+    "description": "本プロジェクトでは、スマートフォンを非利き手で持つ携帯可能なクイックアクセスツールボックスとして利用し、ペン主導のホワイトボードタスクを補助するタッチコマンドを提供する方法を調査します。特に、ユーザーがデバイスを視認することなく（見ずに）操作できるアイズフリーUIデザインを検討し、これによりユーザーがペンタスクに集中できるようにします。",
+    "images": ["projects/Eyes-free_whiteboard.jpg"],
+    "institution_id": "eth",
+    "categories": ["pen", "touch", "large-displays","mobile"],
+    "publication_ids": ["pub_its15wb"]
+  },
+  {
+    "id": "proj_spatialquery",
+    "title": "インタラクティブ地図におけるペンベース空間クエリ",
+    "description": "本研究では、タブレットやインタラクティブテーブルトップ上の地図にペンで注釈を付け、それらの注釈を選択的に空間クエリに変換する一連のペンベース技術を提示し、評価します。これにより、ユーザーは明示的または暗黙的に指定された範囲内で興味のある地点（POI）を検索できます（例：円で囲んだエリア内や描画した経路沿いのレストラン、ホテルなど）。",
+    "images": ["projects/PTMap.jpg"],
+    "institution_id": "eth",
+    "categories": ["pen", "touch"],
+    "publication_ids": ["pub_its14"]
+  },
+  {
+    "id": "proj_docengtabletop",
+    "title": "ペン＆タッチテーブルトップにおけるドキュメントエンジニアリング",
+    "description": "ハイブリッドなペン＆タッチ入力で操作されるデジタルテーブルトップは、豊かなインタラクションの可能性を提供します。未来のオフィスにおけるインタラクティブなワークデスクとして、これらは知識労働者の生産性向上タスク（その多くは文書関連）を支援する可能性があります。本プロジェクトは、文書中心の活動、特に文書の編集やオーサリングを支援するために、これらのシステムの潜在能力を活用することを目指しています。具体的には、両手操作ジェスチャーに基づくポストWIMPデザインの実用性を探求します。",
+    "images": [
+      "projects/PTEditor.jpg",
+      "projects/AR_application2.jpg"
+    ],
+    "institution_id": "eth",
+    "categories": ["doc-eng", "pen", "touch", "tabletop"],
+    "publication_ids": ["pub_thesis14", "pub_its13", "pub_chi13ws", "pub_chi13wip", "pub_uist12ds", "pub_avi12"]
+  },
+  {
+    "id": "proj_ptproperties",
+    "title": "ペン＆タッチ入力の特性",
+    "description": "ペンとタッチを組み合わせた両手入力は、有望な比較的新しいインタラクションパラダイムです。しかし、その特性はまだ十分に理解されておらず、研究する価値があります。本プロジェクトでは、水平面上でのペン＆タッチ入力に関するいくつかの重要な側面（速度、精度、協調性などを含む）を実験的に調査し、報告します。",
+    "images": ["projects/PTProperties.png"],
+    "institution_id": "eth",
+    "categories": ["pen", "touch", "tabletop"],
+    "publication_ids": ["pub_its12"]
+  },
+  {
+    "id": "proj_adaptiveweb",
+    "title": "大型スクリーン向け適応型ウェブページレイアウト",
+    "description": "既存のウェブページの大部分は、大型ディスプレイ、特にワイドスクリーンへの適応が不十分です。私たちは、ウェブ標準（特にHTML5およびCSS3の機能）を用いて適応型ウェブページを生成し評価する技術を提案します。複数カラムレイアウト、スケールに応じた要素の選択と配置、フォントサイズ、行長などの問題に取り組みます。",
+    "images": ["projects/AdaptiveWP.jpg"],
+    "institution_id": "eth",
+    "categories": ["doc-eng", "large-displays"],
+    "publication_ids": ["pub_doceng11", "pub_chi11"]
+  },
+  {
+    "id": "proj_salientpages",
+    "title": "大型文書からの視覚的顕著ページ自動抽出",
+    "description": "この技術は、文書リスト（例：カタログやオンライン書店）にサンプルページのサムネイルとして含める目的で、文書から視覚的に「際立つ」ページを指定された数だけ自動的に選択することを試みます。アルゴリズムは、要素ブロックのサイズや色調の顕著性といった低レベルの特徴を考慮し、より注目を集めやすいページを特定します。選択プロセスにある程度の多様性（spread）を導入するための平滑化機能も利用可能です。",
+    "images": ["projects/SalientPages.png"],
+    "institution_id": "eth",
+    "categories": ["doc-eng", "cv"],
+    "publication_ids": ["pub_jdim09", "pub_icdim08"]
+  },
+  {
+    "id": "proj_touchscansearch",
+    "title": "Touch Scan-n-Search：スキャン文書のオンライン版検索のためのタッチスクリーンインターフェース",
+    "description": "このシステムは、最新のスキャナや複合機向けに設計された直感的なタッチスクリーンインターフェースを通じて、紙文書に基づいたオンラインコンテンツの検索問題を解決します。Touch Scan-n-Searchを使用すると、ユーザーはスキャンされた文書の要素（例：新聞記事）を選択し、一般的なウェブ検索サービスにシームレスに接続して、文書のオンライン版や関連コンテンツを取得できます。これは、文書内のテキスト要素から（OCRを介して）キーフレーズを自動的に抽出し、ユーザーが検索要求を制御および微調整できるタップ可能なGUIウィジェットを作成することによって実現されます。",
+    "images": ["projects/TouchScanSearch.jpg"],
+    "institution_id": "ricoh",
+    "categories": ["doc-eng", "touch"],
+    "publication_ids": ["pub_doceng07","patent_usapp20080115080","patent_jp2008140377a"]
+  },
+  {
+    "id": "proj_smartpublisher",
+    "title": "SmartPublisher：文書要素再利用によるペンベースシステム上での文書作成",
+    "description": "SmartPublisherは、ペンベースデバイス向けの強力なオールインワンアプリケーションであり、ユーザーはアナログおよび/またはデジタル文書から取得した個々の画像やテキスト要素を再利用して、迅速かつ直感的に新しい文書を作成できます。このアプリケーションは、特にタッチスクリーン操作パネルを備えたスキャンデバイスや、それに接続されたタブレットPC（例：大型タッチスクリーンを備えた最新の複合機）を対象としており、その主な目的の1つは、スキャンされた紙文書からの素材の再利用です。",
+    "images": ["projects/SmartPublisher.jpg"],
+    "institution_id": "ricoh",
+    "categories": ["doc-eng", "pen"],
+    "publication_ids": ["pub_doceng06","patent_us8139257","patent_jp2007150858a"]
+  },
+  {
+    "id": "proj_layoutrec",
+    "title": "文書レイアウト認識とテンプレートマッチング",
+    "description": "このシステムにより、ユーザーはスタイラスでラフなフレームを描画したり、スキャンした図面を使用したりして、挿入するコンテンツ（例：フォトアルバム用の写真）のプレースホルダーを作成できます。手描きの形状に基づいて、一致するテンプレートを検索するためのクエリを発行することも可能です。その後、ユーザーは適切なテンプレートを選択し、コンテンツをそのプレースホルダーに自動的にマッピングできます。",
+    "images": ["projects/LayoutTemplate.jpg"],
+    "institution_id": "ricoh",
+    "categories": ["doc-eng", "cv"],
+    "publication_ids": ["patent_us8165404","patent_jp2009093628a"]
+  },
+  {
+    "id": "proj_elementtransfer",
+    "title": "ハイエンド複合機における効率的な文書要素転送のための高度なUI",
+    "description": "ペン操作の複合機向けに設計されたこのアプリケーションは、ユーザーがスキャンした文書の要素を送信および共有するのを支援する2つのモジュールを統合しています。高度なスキャンto Eメール機能により、ユーザーはスキャンした文書の目的の部分のみを送信したり、抽出されたテキストを直接Eメール本文に含めたりすることができます。送信されるコンテンツのサイズと圧縮レベルは、ターゲットとなる受信側デバイス（例：携帯電話）に合わせて調整することも可能です。2番目のモジュールでは、ユーザーは文書要素を収集して自分の業務用PCに送信できます。コンテンツはサイドバーに表示され、そこからワープロなどのデスクトップアプリケーションにドラッグ＆ドロップできます。",
+    "images": ["projects/ContentsBar.png"],
+    "institution_id": "ricoh",
+    "categories": ["doc-eng", "touch"],
+    "publication_ids": ["patent_us8201072","patent_usapp20120224232","patent_usapp20070220425"]
+  },
+  {
+    "id": "proj_videoprinting",
+    "title": "埋め込み動画を含むウェブページの印刷",
+    "description": "マルチメディアコンテンツが埋め込まれたウェブページを標準的なウェブブラウザで印刷しようとすると、せいぜい動画の代わりに単一のフレームが印刷されるだけです。この技術（ブラウザプラグインとして想定）は、動画の失われたコンテキストの一部を回復するために、印刷物に含まれるべき関連性の高いフレームをいくつか抽出します。結果として、動画の位置または文書の最後に、代表的な動画フレームのストリップを含む文書が生成されます。",
+    "images": ["projects/VideoPrinting.jpg"],
+    "institution_id": "ricoh",
+    "categories": ["doc-eng"],
+    "publication_ids": ["patent_jp2009065339a"]
+  },
+  {
+    "id": "proj_iadi",
+    "title": "インタラクティブ・アニメーテッド・ドキュメント・アイコン",
+    "description": "インタラクティブ・アニメーテッド・ドキュメント・アイコン（IADI）は、文書リストやファイルブラウザに統合するために、サムネイルサイズでレンダリングされた完全な文書です。IADIのページは、ユーザー定義のトリガー（マウスホバー、ホイール、またはキーボード）に従って「めくる」ことができます。クイックプレビュー用にページをズームするための拡大機能も利用可能です。",
+    "images": ["projects/IADI.png"],
+    "institution_id": "ricoh",
+    "categories": ["doc-eng"],
+    "publication_ids": ["patent_usapp20090183114","patent_jp2009169537a"]
+  },
+  {
+    "id": "proj_doccompiler",
+    "title": "自動文書コンパイラ",
+    "description": "このプロジェクトの目標は、異種のソース（例：特定のトピックに関するニュース記事）からユーザーに関連するコンテンツを収集・集約し、それらの要素を適切なレイアウトを持つ単一の一貫した文書にコンパイルするための包括的なソリューションを提供することです。レイアウトを生成するための制約を定義する際には、ユーザーの好み、ターゲット媒体の制約、美的レイアウトルール、および項目間の意味的類似性など、いくつかの基準が考慮されます。",
+    "images": ["projects/DocumentCompiler.jpg"],
+    "institution_id": "ricoh",
+    "categories": ["doc-eng", "ml"],
+    "publication_ids": ["patent_usapp20090180126","patent_jp2009169536a"]
+  },
+  {
+    "id": "proj_elementsearch",
+    "title": "文書要素の抽出と検索",
+    "description": "本研究は、既存のオフィス文書から文書コンポーネントを抽出し、再利用可能な要素のデータベースを構築することに取り組んでいます。これらの要素は、専用のウェブインターフェース（キーワード検索だけでなく、内容ベースの検索も利用可能）を介して取得し、新しい文書に挿入することができます。",
+    "images": ["projects/SmartNavi.png"],
+    "institution_id": "ricoh",
+    "categories": ["doc-eng"],
+    "publication_ids": ["patent_jp2009075651a","patent_jp2008071311a"]
+  }
+]

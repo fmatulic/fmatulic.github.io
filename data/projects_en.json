@@ -1,0 +1,344 @@
+[
+    {
+      "id": "proj_archaracters",
+      "title": "Bringing Everyday Objects to Life in AR with AI-Powered Talking Characters",
+      "description": "We explore how AR and AI can turn everyday objects into interactive, talking characters. Using AR headsets or smartphones, users can see and engage in dynamic dialogues with animated characters overlaid onto physical items. These characters have unique personalities automatically derived from the objects they represent and respond to their environment and user interactions, leading to rich, context-aware conversations grounded in the real world. ",
+      "images": [
+        "projects/ARCharactersConcept.jpg","projects/ARCharacters.jpg"
+      ],
+      "institution_id": "pfn",
+      "categories": ["xr", "genai"],
+      "publication_ids": ["pub_chi25lbw_arc","pub_chi25w"]
+    },
+    {
+      "id": "proj_supinevr",
+      "title": "Exploring the Feasibility of Working in VR while Lying Down",
+      "description": "Can we work effectively in VR while lying down? In a first step of this exploration, we studied typing and pointing performance comparing seated and supine postures. This research informs VR design for accessibility and comfort in non-traditional positions.",
+      "images": [
+        "projects/SupineVR.jpg"
+      ],
+      "institution_id": "pfn",
+      "categories": ["xr", "embodied"],
+      "publication_ids": ["pub_chi25lbw_svr"]
+    },
+    {
+      "id": "proj_desktopphonevr",
+      "title": "Enhancing Touch Detection with a Phone in Desktop VR",
+      "description": "Headset-based hand tracking in VR lacks the precision for reliable touch input on surfaces. We introduce a solution that uses a smartphone's camera to detect finger contacts, combined with headset hand tracking. This enhances touch interaction, offering improved performance over relying solely on the headset, but is still limited by hand tracking inaccuracies.",
+      "images": [
+        "projects/DesktopPhoneVR.jpg"
+      ],
+      "institution_id": "pfn",
+      "categories": ["xr", "touch", "mobile", "cv", "ml"],
+      "publication_ids": ["pub_chi25lbw_pvr"]
+    },
+    {
+      "id": "proj_hci4ml",
+      "title": "HCI for Machine Learning",
+      "description": "Preparing and preprocessing source data to train neural networks can require considerable manual labour and expertise. We create intuitive user interfaces and techniques to facilitate some of those tasks, including data labelling, cleaning and augmentation.",
+      "images": [
+        "projects/MultiviewCapture.jpg",
+        "projects/DataAugment.jpg"
+      ],
+      "institution_id": "pfn",
+      "categories": ["ml", "cv"],
+      "publication_ids": ["pub_chi25lbw_ts","pub_iui25","pub_siggraphasia23tc", "pub_iss23", "pub_chi23lbw2"]
+    },
+    {
+      "id": "proj_dexterous",
+      "title": "Dexterous Finger Gestures to Manipulate Mobile Phones",
+      "description": "This research explores single-handed \"dexterous gestures\" for manipulating a mobile phone using fine motor skills of fingers. We consider four dexterous manipulations: shift, spin, rotate, and flip, which we analyse in three user studies. We provide design guidelines to map gestures to interactions and show how they can be used in applications.",
+      "images": ["projects/PhoneDexterity.png"],
+      "institution_id": "pfn",
+      "categories": ["mobile", "embodied"],
+      "publication_ids": ["pub_chi23"]
+    },
+    {
+      "id": "proj_hybridvr",
+      "title": "Pen+Touch+Midair Hybrid Two-Hand Interaction in desktop VR",
+      "description": "We explore a design space for hybrid bimanual pen and touch input extended to midair interaction in desktop-based virtual reality, specifically, asymmetric interaction patterns combining the pen with the other hand when interacting in the same “space” (either surface or midair), across both spaces, and with cross-space transitions (from surface to midair and vice versa). We concretely investigate those interactions and associated gestures with three testbed applications for 3D modelling, volumetric rendering, and terrain editing.",
+      "images": [
+        "projects/PenTouchMidair.png",
+        "projects/VRTerrainModelling.jpg"
+      ],
+      "institution_id": "pfn",
+      "categories": ["xr", "embodied", "pen","touch"],
+      "publication_ids": ["pub_gi23", "pub_chi22lbw"]
+    },
+    {
+      "id": "proj_typealike",
+      "title": "Typealike: Near-Keyboard Hand Postures for Expanded Laptop Interaction",
+      "description": "Typealike is a style of hand postures close to natural typing poses that allow users to quickly trigger commands on a laptop computer. The hand postures are detected using deep learning classification of images captured by the laptop's webcam reflected through a downward-facing mirror.",
+      "images": ["projects/Typealike.png"],
+      "institution_id": "pfn",
+      "categories": ["ml", "cv", "embodied"],
+      "publication_ids": ["pub_iss21a"]
+    },
+    {
+      "id": "proj_phonevr",
+      "title": "Mobile Phones as VR Controllers with Above-Screen Mirrors to Capture and Track Hands for Visualisation in VR",
+      "description": "Smartphones can be used as VR controllers but since the user cannot see the phone or their hands when wearing the headset, precise touch input is difficult. We address this problem by attaching one or two mirrors above the phone screen such that the front-facing camera captures the hand through reflection. With a single mirror the camera feed can be shown directly as a texture on the screen of the phone model in VR to help the user aim precisely with their fingers. With two mirrors capturing the hand from two different angles, we can track the 3D position of fingertips using deep learning.",
+      "images": [
+        "projects/Phonetroller.jpg",
+        "projects/PhoneVR2.jpg"
+      ],
+      "institution_id": "pfn",
+      "categories": ["xr", "mobile", "cv", "ml","touch"],
+      "publication_ids": ["pub_gi24", "pub_chi23lbw", "pub_chi21"]
+    },
+    {
+      "id": "proj_pensight",
+      "title": "PenSight: Enhancing Pen Interaction via a Pen-Top Camera",
+      "description": "PenSight is a novel concept to enhance pen interaction on tablets using a fisheye-lens camera attached to the top of the pen and facing downwards. Thus, the camera can \"see\" the user's hands and the surrounding environment. Using deep learning, we can detect different hand postures and tablet grips for quick action triggers and capturing off-tablet content such as surrounding documents.",
+      "images": ["projects/PenSight.jpg"],
+      "institution_id": "pfn",
+      "categories": ["pen", "cv", "ml"],
+      "publication_ids": ["pub_chi20", "pub_springer21"]
+    },
+    {
+      "id": "proj_penemg",
+      "title": "Elicitation of Alternative Pen-Holding Postures for Quick Action Triggers with Suitability for EMG Armband Detection",
+      "description": "In this project we study what alternative ways of gripping a digital pen people might choose to trigger actions and shortcuts in applications (e.g. while holding the pen, extend the pinkie to invoke a menu). We also investigate how well we can recognise these different pen-holding postures using data collected from an EMG armband and deep learning.",
+      "images": ["projects/PenEMGIcon.jpg"],
+      "institution_id": "pfn",
+      "categories": ["pen", "ml"],
+      "publication_ids": ["pub_iss19", "pub_springer21"]
+    },
+    {
+      "id": "proj_hri",
+      "title": "Human-Robot Interaction for Personal Robots",
+      "description": "Smart domestic robots are poised to revolutionise the way household chores and everyday tasks are carried out in the home of the future. Thanks to the recent boom of deep learning and \"artificial intelligence\", machines are able to autonomously perform increasingly complex tasks. But no matter how smart these robots may be or become, humans still need to engage with them and it is paramount that such interactions occur smoothly and safely. Our research efforts in human-robot interaction aim to not only better support end users (customers) when operating robots in their home, but also facilitate the programming and training of these machines by engineers, technicians and developers.",
+      "images": ["projects/HayateGesture.jpg"],
+      "institution_id": "pfn",
+      "categories": ["robotics", "ml"],
+      "publication_ids": ["pub_chi19lbw", "pub_chi19hcmlws","link_ceatec18"]
+    },
+    {
+      "id": "proj_colouraize",
+      "title": "ColourAIze: AI-Driven Colourisation of Paper Drawings with Interactive Projection System",
+      "description": "ColourAIze is an interactive system that analyses black and white drawings on paper, automatically determines realistic colour fills using AI and projects those colours onto the paper within the line art. In addition to selecting between multiple colouring styles, the user can specify local colour preferences to the AI via simple stylus strokes in desired areas of the drawing. This allows users to immediately and directly view potential colour fills for paper sketches or published black and white artwork such as comics.",
+      "images": ["projects/ColourAIze.jpg"],
+      "institution_id": "pfn",
+      "categories": ["genai", "cv","ml", "xr"],
+      "publication_ids": ["pub_iss18"]
+    },
+    {
+      "id": "proj_unimanualpt",
+      "title": "Single-Hand Pen and Touch Input Using Variations of Pen-Holding Grips",
+      "description": "This work investigates the use of different pen-holding grips while writing and drawing on a tablet to trigger various actions, including changing the pen function (e.g. to select, scroll, search) and calling in-place menus. The postures are recognised when the hand contacts the surface using a deep convolutional neural network applied on the raw touch input data (the capactitive image of the tablet). The feasibility of this approach is confirmed by two user evaluations.",
+      "images": ["projects/UnimanualPT.jpg"],
+      "institution_id": "pfn",
+      "categories": ["pen", "touch", "ml", "cv"],
+      "publication_ids": ["pub_uist18", "pub_springer21"]
+    },
+    {
+      "id": "proj_hybridpointing",
+      "title": "HybridPointing for Touch: Switching Between Absolute and Relative Pointing on Large Touch Screens",
+      "description": "CursorTap is a multitouch selection technique to efficiently reach both near and distant targets on large wall displays using hybrid absolute and relative pointing. The user switches to relative mode with three-fingers of one hand while using the other hand to control a cursor, similar to a touchpad.",
+      "images": ["projects/HybridPointing.png"],
+      "institution_id": "waterloo",
+      "categories": ["large-displays", "touch"],
+      "publication_ids": ["pub_iss21b"]
+    },
+    {
+      "id": "proj_modeswitchvr",
+      "title": "Barehand Mid-air Mode-Switching Techniques in VR",
+      "description": "This work presents an empirical comparison of bare hand, mid-air mode-switching techniques suitable for virtual reality (VR). Specifically, we look at what kind of hand/finger postures can efficiently change the type of operation performed by the same action of the dominant hand (e.g. from moving a virtual object with a finger translation to scaling or copying it). We consider common finger and hand motions such as pinching fingers, turning and waving the hand(s)) as switching techniques. Our results provide guidance to researchers and practitioners when choosing or designing bare hand, mid-air mode-switching techniques in VR.",
+      "images": ["projects/ModeSwitchVR.jpg"],
+      "institution_id": "waterloo",
+      "categories": ["xr", "embodied"],
+      "publication_ids": ["pub_chi19"]
+    },
+    {
+      "id": "proj_multiray",
+      "title": "Multiray: Multi-Finger Raycasting for Large Vertical Displays",
+      "description": "Multiray is a concept that extends single raycasting for interacting with distant vertical displays to multi-finger raycasting, that is, each finger projects a ray onto the remote display. In particular, with multirays, patterns of ray intersections created by hand postures can form 2D geometric shapes to trigger actions and perform direct manipulations that go beyond single-point selections.",
+      "images": ["projects/Multiray.jpg"],
+      "institution_id": "waterloo",
+      "categories": ["large-displays", "embodied"],
+      "publication_ids": ["pub_chi18"]
+    },
+    {
+      "id": "proj_modeswitchtouch",
+      "title": "Experimental Analysis of Mode Switching Techniques in Touch-based User Interfaces",
+      "description": "This project looks at the performance of switching between different functions or modes for touch input (the possibility to rapidly change the output produced by the same touch action). Six techniques are evaluated in sitting and standing conditions: long press, non-dominant hand, two-fingers, hard press, knuckle, and thumb-on-finger. Our work addresses the lack of empirical evidence on the efficiency of touch mode-switching techniques and provides guidance to practitioners and researchers when designing new mode-switching methods.",
+      "images": ["projects/Modeswitch.jpg"],
+      "institution_id": "waterloo",
+      "categories": ["touch"],
+      "publication_ids": ["pub_chi17"]
+    },
+    {
+      "id": "proj_handposturewidgets",
+      "title": "Hand and Finger Posture-Based Calling and Control of Tabletop Widgets",
+      "description": "Tabletop interaction can be enriched by considering whole hands as input instead of only fingertips. In this work, we propose a straightforward, easily reproducible computer vision algorithm to recognise hand contact shapes from the raw touch contact image. The technique is able to discard resting arms and supports dynamic properties such as finger movement and hover. The algorithm is used to trigger, parameterise, and dynamically control menu and tool widgets.",
+      "images": ["projects/PalmFingersFanMenu.jpg"],
+      "institution_id": "imld",
+      "categories": ["touch", "cv", "tabletop"],
+      "publication_ids": ["pub_iss17"]
+    },
+    {
+      "id": "proj_embodiedpres",
+      "title": "Embodied Interactions for Novel Immersive Presentational Experiences",
+      "description": "This project is about enhancing live multimedia presentations by integrating presenters in their presentation content as interactive avatars. Using multimodal input, especially body gestures, presenters control those embedded avatars through which they can interact with the virtual presentation environment in a fine-grained fashion, i.e. they are able to manipulate individual presentation elements and data as virtual props. The goal of this endeavour is to create novel immersive presentational experiences for live stage performances (talks, lectures etc.) as well as for remote conferencing in more confined areas such as offices and meeting rooms.",
+      "images": ["projects/EmbeddedPres.jpg"],
+      "institution_id": "imld",
+      "categories": ["embodied"],
+      "publication_ids": ["pub_chi16lbw_eip"]
+    },
+    {
+      "id": "proj_smartproj",
+      "title": "Smart Ubiquitous Projection: Discovering Adequate Surfaces for the Projection of Adaptive Content",
+      "description": "In this work, we revisit the concept of ubuiquitous projection, where instead of considering every physical surface and object as a display, we seek to determine areas that are suitable for the projection and interaction with digital information. We achieve this using mobile projector-cameras units (procams) and a computer vision technique to automatically detect rectangular surface regions with properties that are desirable for projection (uniform, pale, non-reflective, planar etc.). In a next step, we explore body-based interactions to adaptively lay out content in those recognised areas.",
+      "images": ["projects/SmartProj.jpg"],
+      "institution_id": "imld",
+      "categories": ["cv"],
+      "publication_ids": ["pub_chi16lbw_sp"]
+    },
+    {
+      "id": "proj_bodylenses",
+      "title": "BodyLenses – Embodied Magic Lenses and Personal Territories for Wall Displays",
+      "description": "Magic lenses are popular tools to provide locally altered views of visual data. In this work, we introduce the concept of BodyLenses, special kinds of magic lenses for wall displays that are mainly controlled by body interactions. Using body position, arm gestures, distance to the display and classic multitouch on the screen, we show how parameters such as lens position, shape, function and tool selection can be dynamically and intuitively modified by users.",
+      "images": ["projects/BodyLenses.jpg"],
+      "institution_id": "imld",
+      "categories": ["large-displays", "embodied"],
+      "publication_ids": ["pub_its15bl"]
+    },
+    {
+      "id": "proj_msrsensing",
+      "title": "Sensing Techniques for Tablet+Stylus Interaction",
+      "description": "Using a special grip- and motion-sensitive stylus and a grip-sensitive tablet, we explore a range of novel pen and touch interactions including detecting how the user holds the pen and the tablet, distinguishing between the pen-holding hand and the bare hand, discarding touches caused by resting palms while writing (palm rejection) and a number of contextual gestures resulting from the detection of those different postures.",
+      "images": ["projects/MSRGripSensing.jpg"],
+      "institution_id": "msr",
+      "categories": ["pen", "touch", "mobile"],
+      "publication_ids": ["pub_uist14"]
+    },
+    {
+      "id": "proj_eyesfreewb",
+      "title": "Handheld Devices as Eyes-Free Touch Toolboxes for Pen-Based Interactive Whiteboards",
+      "description": "In this project, we investigate how smartphones can be used as portable quick-access toolboxes held by the non-dominant hand to provide assistive touch commands for pen-driven whiteboard tasks. In particular, we consider an eyes-free UI design, which allows users to operate the handheld device in a blind manner, i.e. without having to look at it, thereby allowing them to concentrate on the pen task.",
+      "images": ["projects/Eyes-free_whiteboard.jpg"],
+      "institution_id": "eth",
+      "categories": ["pen", "touch", "large-displays","mobile"],
+      "publication_ids": ["pub_its15wb"]
+    },
+    {
+      "id": "proj_spatialquery",
+      "title": "Pen-Based Spatial Queries on Interactive Maps",
+      "description": "In this work, we present and evaluate a set of pen-based techniques to annotate maps on tablets or interactive tabletops and selectively convert those annotations into spatial queries allowing users to search for points of interests within explicitly or implicitly specified scopes, e.g. look for restaurants, hotels etc. within circled areas or along sketched paths or calculated routes.",
+      "images": ["projects/PTMap.jpg"],
+      "institution_id": "eth",
+      "categories": ["pen", "touch"],
+      "publication_ids": ["pub_its14"]
+    },
+    {
+      "id": "proj_docengtabletop",
+      "title": "Document Engineering on Pen and Touch Tabletops",
+      "description": "Digital tabletops operated using hybrid pen and touch input provide rich interaction possibilities. As interactive workdesks within the office of the future, they stand to support knowledge workers in a number of productivity tasks, many of which are likely to involve documents. This project aims to leverage the potential of those systems to support document-centric activities, especially the editing and authoring of documents. In particular, the practicality of post-WIMP designs based on bimanual gestures is explored.",
+      "images": [
+        "projects/PTEditor.jpg",
+        "projects/AR_application2.jpg"
+      ],
+      "institution_id": "eth",
+      "categories": ["doc-eng", "pen", "touch", "tabletop"],
+      "publication_ids": ["pub_thesis14", "pub_its13", "pub_chi13ws", "pub_chi13wip", "pub_uist12ds", "pub_avi12"]
+    },
+    {
+      "id": "proj_ptproperties",
+      "title": "Properties of Pen and Touch Input",
+      "description": "Combined bimanual pen and touch input is a relatively new interaction paradigm with promising prospects. Its properties are not yet well understood and hence merit to be studied. This project experimentally investigates and reports on some important issues of pen and touch input on horizontal surfaces, including aspects of speed, accuracy and coordination.",
+      "images": ["projects/PTProperties.png"],
+      "institution_id": "eth",
+      "categories": ["pen", "touch", "tabletop"],
+      "publication_ids": ["pub_its12"]
+    },
+    {
+      "id": "proj_adaptiveweb",
+      "title": "Adaptive Web-Page Layout for Large Screens",
+      "description": "The vast majority of web pages adapt very poorly to large displays, especially widescreens. We propose techniques to produce and evaluate adaptive web pages using web standards (and especially features of HTML5 and CSS3). We address issues such as multi-column layouts, scale-dependent element selection and positioning, font size, line lengths etc.",
+      "images": ["projects/AdaptiveWP.jpg"],
+      "institution_id": "eth",
+      "categories": ["doc-eng", "large-displays"],
+      "publication_ids": ["pub_doceng11", "pub_chi11"]
+    },
+    {
+      "id": "proj_salientpages",
+      "title": "Automatic Extraction of Visually Salient Pages of Large Documents",
+      "description": "This technique attempts to automatically select a given number of pages from a document that visually \"stand out\" with a view to including them in a document list with thumbnails of sample pages (e.g. a catalogue or an online book store). The algorithm considers a set of low-level features such as element block sizes and tone saliency to determine pages that are more likely to attract attention. A smoothing function is available to inject some level of spread in the culling process.",
+      "images": ["projects/SalientPages.png"],
+      "institution_id": "eth",
+      "categories": ["doc-eng", "cv"],
+      "publication_ids": ["pub_jdim09", "pub_icdim08"]
+    },
+    {
+      "id": "proj_touchscansearch",
+      "title": "Touch Scan-n-Search: A Touchscreen Interface To Retrieve Online Versions of Scanned Documents",
+      "description": "This system tackles the problem of finding online content based on paper documents through an intuitive touchscreen interface designed for modern scanners and multifunction printers. Touch Scan-n-Search allows the user to select elements of a scanned document (e.g. a newspaper article) and seamlessly connect to common web search services in order to retrieve the online version of the document along with related content. This is achieved by automatically extracting keyphrases from text elements in the document (obtained by OCR) and creating tappable GUI widgets to allow the user to control and fine-tune the search requests.",
+      "images": ["projects/TouchScanSearch.jpg"],
+      "institution_id": "ricoh",
+      "categories": ["doc-eng", "touch"],
+      "publication_ids": ["pub_doceng07","patent_usapp20080115080","patent_jp2008140377a"]
+    },
+    {
+      "id": "proj_smartpublisher",
+      "title": "SmartPublisher - Document Creation on Pen-Based Systems Via Document Element Reuse",
+      "description": "SmartPublisher is a powerful, all-in-one application for pen-based devices with which users can quickly and intuitively create new documents by reusing individual image and text elements acquired from analogue and/or digital documents. The application is especially targeted at scanning devices with touch screen operating panels or tablet PCs connected to them (e.g. modern multifunction printers with large touch screen displays), as one of its main purposes is reuse of material obtained from scanned paper documents.",
+      "images": ["projects/SmartPublisher.jpg"],
+      "institution_id": "ricoh",
+      "categories": ["doc-eng", "pen"],
+      "publication_ids": ["pub_doceng06","patent_us8139257","patent_jp2007150858a"]
+    },
+    {
+      "id": "proj_layoutrec",
+      "title": "Document Layout Recognition and Template Matching",
+      "description": "This system allows the user to draw rough frames with a stylus or use a scanned drawing to create placeholders for content to be inserted in (e.g. photos for a photo album). Based on the hand-drawn shapes, queries to search for matching templates can also be issued. The user can then select an appropriate template and automatically map content to its placeholders.",
+      "images": ["projects/LayoutTemplate.jpg"],
+      "institution_id": "ricoh",
+      "categories": ["doc-eng", "cv"],
+      "publication_ids": ["patent_us8165404","patent_jp2009093628a"]
+    },
+    {
+      "id": "proj_elementtransfer",
+      "title": "Advanced UI for Efficient Document Element Transfer on High-End Multifunction Printers",
+      "description": "This application designed for pen-operated multifunction printers integrates 2 modules that support users to send and share elements of scanned documents. The advanced scan2E-Mail function allows users to send only the desired portion of the scanned document as well as extracted text directly in the E-Mail body. The size and compression level of the sent content can also be adapted to the target recipient device (e.g. a mobile phone). The second module gives users the possibility to gather and send document elements to their work PC. The contents appear in a sidebar from which they can be dragged and dropped into desktop applications such as a word processor.",
+      "images": ["projects/ContentsBar.png"],
+      "institution_id": "ricoh",
+      "categories": ["doc-eng", "touch"],
+      "publication_ids": ["patent_us8201072","patent_usapp20120224232","patent_usapp20070220425"]
+    },
+    {
+      "id": "proj_videoprinting",
+      "title": "Printing Web Pages with Embedded Videos",
+      "description": "Attempting to print a web page with embedded multimedia content with a standard web browser will at best return a printout with a single frame in lieu of the video. This technique, meant as a browser plugin, extracts a number of relevant frames to be included in the printout to recover some of the lost context of the video. The result is a document containing strips of representative movie frames at the location of the video or at the end of the document.",
+      "images": ["projects/VideoPrinting.jpg"],
+      "institution_id": "ricoh",
+      "categories": ["doc-eng"],
+      "publication_ids": ["patent_jp2009065339a"]
+    },
+    {
+      "id": "proj_iadi",
+      "title": "Interactive Animated Document Icons",
+      "description": "Interactive Animated Document Icons or IADIs are full documents rendered in thumbnail size to be integrated in document lists or file browsers. Pages of an IADI can be \"turned\" following a user-defined trigger (mouse hover, wheel or keyboard). A magnifying function is also available to zoom the pages for quick previews.",
+      "images": ["projects/IADI.png"],
+      "institution_id": "ricoh",
+      "categories": ["doc-eng"],
+      "publication_ids": ["patent_usapp20090183114","patent_jp2009169537a"]
+    },
+    {
+      "id": "proj_doccompiler",
+      "title": "Automatic Document Compiler",
+      "description": "The goal of this project is to provide a comprehensive solution to gather and aggregate content relevant to the user from heterogeneous sources (e.g. news articles about a particular topic) and compile the elements into a single coherent document with an appropriate layout. Several criteria are considered to define the constraints used to produce the layout: user preferences, target medium constraints, aesthetic layout rules and semantic similarity between items.",
+      "images": ["projects/DocumentCompiler.jpg"],
+      "institution_id": "ricoh",
+      "categories": ["doc-eng", "ml"],
+      "publication_ids": ["patent_usapp20090180126","patent_jp2009169536a"]
+    },
+    {
+      "id": "proj_elementsearch",
+      "title": "Document Element Extraction and Search",
+      "description": "This work deals with the extraction of document components from existing office documents in order to populate a database of reusable elements. Those elements can then be retrieved via an ad hoc web interface (using keywords, but also content-based searching) and inserted into new documents.",
+      "images": ["projects/SmartNavi.png"],
+      "institution_id": "ricoh",
+      "categories": ["doc-eng"],
+      "publication_ids": ["patent_jp2009075651a","patent_jp2008071311a"]
+    }
+  ]

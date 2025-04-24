@@ -1,0 +1,121 @@
+{
+  "lang": "ja",
+  "meta": {
+    "title": "松立 文利 - 研究ホームページ",
+    "description": "松立 文利の研究ホームページ。HCI、ペン＆タッチ、XR、身体的インタラクション、ドキュメント工学の研究者。"
+  },
+  "header": {
+    "name": "松立 文利 (Fumitoshi MATSULIĆ), Ph.D."
+  },
+  "nav": {
+    "lang_switch_text": "English",
+    "lang_switch_target": "en"
+  },
+  "intro": {
+    "greeting": "ようこそ！",
+    "text": "ヒューマンコンピュータインタラクション (HCI)、特にペン＆タッチインタラクション、拡張現実 (XR)、身体的インタラクション、ドキュメント工学の分野を中心に研究しています。このページでは、私のプロジェクト、論文、特許を紹介しています。"
+  },
+  "teaser": {
+    "alt_text": "研究ハイライトアニメーション"
+  },
+  "sections": {
+    "research": "研究",
+    "categories": "カテゴリで絞り込み:",
+    "institutions": "研究機関:",
+    "projects": "プロジェクトと論文",
+    "patents": "特許",
+    "contact": "連絡先"
+  },
+  "categories": [
+    { "id": "all", "name": "すべて", "logo": "" },
+    { "id": "pen-touch", "name": "ペン＆タッチ", "logo": "img/logos/pen-touch.png" },
+    { "id": "xr", "name": "拡張現実 (XR)", "logo": "img/logos/xr.png" },
+    { "id": "embodied", "name": "身体的インタラクション", "logo": "img/logos/embodied.png" },
+    { "id": "doc-eng", "name": "ドキュメント工学", "logo": "img/logos/doc-eng.png" }
+  ],
+  "institutions": [
+      { "id": "inst1", "name": "機関名 1", "logo": "img/logos/institution1.png", "url": "http://institution1.example.com" },
+      { "id": "inst2", "name": "機関名 2", "logo": "img/logos/institution2.png", "url": "http://institution2.example.com" }
+  ],
+  "projects": [
+    {
+      "id": "proj-blendedboard",
+      "title": "Blended Board: 物理的なコンテンツとデジタルコンテンツのシームレスな統合",
+      "categories": ["pen-touch", "doc-eng"],
+      "institution_id": "inst1",
+      "images": ["projects/blendedboard/image1.jpg"],
+      "description": "このプロジェクトは、物理的な付箋とデジタル情報をインタラクティブホワイトボード上で組み合わせるためのインタラクション技術を探求します。",
+      "publications": [
+        {
+          "id": "pub1",
+          "title": "Blended Board: Linking Physical Sticky Notes and Digital Information on an Interactive Whiteboard",
+          "authors": "F. Matsulic, B. Hartmann",
+          "venue": "Proceedings of the ACM International Conference on Interactive Tabletops and Surfaces (ITS '14)",
+          "year": 2014,
+          "pdf": "https://fmatulic.github.io/pubs/its14-matsulic.pdf",
+          "video": "https://www.youtube.com/watch?v=EXAMPLE1",
+          "doi": "10.1145/2669485.2669498"
+        }
+      ]
+    },
+    {
+        "id": "proj-xr-collab",
+        "title": "複合現実における共同デザインレビュー",
+        "categories": ["xr", "embodied"],
+        "institution_id": "inst2",
+        "images": ["projects/xr-collab/image1.jpg", "projects/xr-collab/image2.jpg"],
+        "description": "同一拠点およびリモートの協力者が、ヘッドマウントディスプレイと触覚コントローラーを使用して3Dモデルとどのように対話できるかを探求します。",
+        "publications": [
+          {
+            "id": "pub2",
+            "title": "Tangible Interaction for MR Collaborative Design",
+            "authors": "F. Matsulic, A. Researcher",
+            "venue": "IEEE International Symposium on Mixed and Augmented Reality (ISMAR '23)",
+            "year": 2023,
+            "pdf": "path/to/your/ismar23.pdf",
+            "video": "path/to/your/video.mp4"
+          },
+          {
+            "id": "pub3",
+            "title": "Comparing Interaction Modalities for Remote MR Collaboration",
+            "authors": "F. Matsulic, 他",
+            "venue": "ACM Symposium on Virtual Reality Software and Technology (VRST '24)",
+            "year": 2024,
+            "pdf": "path/to/your/vrst24.pdf"
+          }
+        ]
+      }
+  ],
+  "patents": [
+    {
+      "id": "patent1",
+      "title": "物理コンテンツとデジタルコンテンツを融合したインタラクティブシステム",
+      "number": "米国特許 第9,XXX,XXX号",
+      "date": "2018年5月15日",
+      "url": "https://patents.google.com/patent/US9XXXXXXB2/en"
+    },
+    {
+      "id": "patent2",
+      "title": "複合現実におけるマルチユーザーインタラクションの方法および装置",
+      "number": "日本特許 第XXXX号",
+      "date": "2024年1月20日"
+    }
+  ],
+  "contact": {
+    "email": "your.email [at] example.com",
+    "linkedin": "https://linkedin.com/in/yourprofile",
+    "google_scholar": "https://scholar.google.com/citations?user=YOUR_ID",
+    "address": "（任意）住所 1行目<br>（任意）住所 2行目"
+  },
+  "ui_text": {
+      "publications": "関連論文:",
+      "pdf": "PDF",
+      "video": "動画",
+      "doi": "DOI",
+      "institution": "所属機関:",
+      "view_project": "プロジェクト詳細を見る",
+      "tab_projects": "プロジェクト",
+      "tab_publications": "全論文リスト",
+      "all_publications_title": "全論文リスト（発表年順）"
+  }
+}
