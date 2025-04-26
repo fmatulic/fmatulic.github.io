@@ -55,7 +55,7 @@
     },
     {
       "id": "proj_hybridvr",
-      "title": "Pen+Touch+Midair Hybrid Two-Hand Interaction in desktop VR",
+      "title": "Pen+Touch+Midair Hybrid Two-Hand Interaction in Desktop VR",
       "description": "We explore a design space for hybrid bimanual pen and touch input extended to midair interaction in desktop-based virtual reality, specifically, asymmetric interaction patterns combining the pen with the other hand when interacting in the same “space” (either surface or midair), across both spaces, and with cross-space transitions (from surface to midair and vice versa). We concretely investigate those interactions and associated gestures with three testbed applications for 3D modelling, volumetric rendering, and terrain editing.",
       "images": [
         "projects/PenTouchMidair.png",
