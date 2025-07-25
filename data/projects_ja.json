@@ -4,8 +4,8 @@
     "title": "ARとAIによる対話型キャラクター生成：日用品への命の吹き込み",
     "description": "ARとAIを組み合わせ、身の回りの物体を知的な対話型キャラクターとして実体化させる研究です。ARヘッドセットやスマートフォンを通じて、ユーザーは現実の物体上に表示されるキャラクターと自然な対話を楽しむことができます。キャラクターは物体の特徴から個性を自動学習し、周囲の状況やユーザーの行動に応じて反応するため、現実世界に根差した文脈的で豊かなコミュニケーションが可能になります。",
     "images": [
-      "projects/ARCharactersConcept.jpg",
-      "projects/ARCharacters.jpg"
+      "projects/ARCharactersConcept_jp.jpg",
+      "projects/ARCharacters_jp.jpg"
     ],
     "institution_id": "pfn",
     "categories": ["xr", "genai"],
