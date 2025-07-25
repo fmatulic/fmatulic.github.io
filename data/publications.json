@@ -1,5 +1,28 @@
 [
     {
+      "id": "pub_blog25jp",
+      "type": "link",
+      "title": "日常の「モノ」が話し出す未来？ARとAIで生まれる新しいコミュニケーション",
+      "authors": "Fabrice Matulic",
+      "venue": "Preferred Networks Tech Blog (JP)",
+      "pdf": null,
+      "video": "https://www.youtube.com/watch?v=7A9mEjgb-_U",
+      "year": 2025,
+      "doi": null,
+      "notes": null
+    },
+    {
+      "id": "pub_blog25en",
+      "type": "link",
+      "title": "What If Your Coffee Mug Could Talk? Bringing Everyday Objects to Life with AR and AI",
+      "authors": "Fabrice Matulic",
+      "venue": "Preferred Networks Tech Blog (EN)",
+      "pdf": null,
+      "year": 2025,
+      "doi": null,
+      "notes": null
+    },
+    {
       "id": "pub_chi25lbw_arc",
       "type": "poster",
       "title": "Bringing Everyday Objects to Life in Augmented Reality with AI-Powered Talking Characters",
