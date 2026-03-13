@@ -7,7 +7,7 @@
         "projects/ARCharactersConcept.jpg","projects/ARCharacters.jpg"
       ],
       "institution_id": "pfn",
-      "categories": ["xr", "genai"],
+      "categories": ["xr", "ai-ml"],
       "publication_ids": ["pub_blog25en","pub_chi25lbw_arc","pub_chi25w"]
     },
     {
@@ -29,7 +29,7 @@
         "projects/DesktopPhoneVR.jpg"
       ],
       "institution_id": "pfn",
-      "categories": ["xr", "touch", "mobile", "cv", "ml"],
+      "categories": ["xr", "pen-touch", "mobile", "cv", "ai-ml"],
       "publication_ids": ["pub_chi25lbw_pvr"]
     },
     {
@@ -41,7 +41,7 @@
         "projects/DataAugment.jpg"
       ],
       "institution_id": "pfn",
-      "categories": ["ml", "cv"],
+      "categories": ["ai-ml", "cv"],
       "publication_ids": ["pub_chi25lbw_ts","pub_iui25","pub_siggraphasia23tc", "pub_iss23", "pub_chi23lbw2"]
     },
     {
@@ -62,7 +62,7 @@
         "projects/VRTerrainModelling.jpg"
       ],
       "institution_id": "pfn",
-      "categories": ["xr", "embodied", "pen","touch"],
+      "categories": ["xr", "embodied", "pen-touch"],
       "publication_ids": ["pub_gi23", "pub_chi22lbw"]
     },
     {
@@ -71,7 +71,7 @@
       "description": "Typealike is a style of hand postures close to natural typing poses that allow users to quickly trigger commands on a laptop computer. The hand postures are detected using deep learning classification of images captured by the laptop's webcam reflected through a downward-facing mirror.",
       "images": ["projects/Typealike.png"],
       "institution_id": "pfn",
-      "categories": ["ml", "cv", "embodied"],
+      "categories": ["ai-ml", "cv", "embodied"],
       "publication_ids": ["pub_iss21a"]
     },
     {
@@ -83,7 +83,7 @@
         "projects/PhoneVR2.jpg"
       ],
       "institution_id": "pfn",
-      "categories": ["xr", "mobile", "cv", "ml","touch"],
+      "categories": ["xr", "mobile", "cv", "ai-ml", "pen-touch"],
       "publication_ids": ["pub_gi24", "pub_chi23lbw", "pub_chi21"]
     },
     {
@@ -92,7 +92,7 @@
       "description": "PenSight is a novel concept to enhance pen interaction on tablets using a fisheye-lens camera attached to the top of the pen and facing downwards. Thus, the camera can \"see\" the user's hands and the surrounding environment. Using deep learning, we can detect different hand postures and tablet grips for quick action triggers and capturing off-tablet content such as surrounding documents.",
       "images": ["projects/PenSight.jpg"],
       "institution_id": "pfn",
-      "categories": ["pen", "cv", "ml"],
+      "categories": ["pen-touch", "cv", "ai-ml"],
       "publication_ids": ["pub_chi20", "pub_springer21"]
     },
     {
@@ -101,7 +101,7 @@
       "description": "In this project we study what alternative ways of gripping a digital pen people might choose to trigger actions and shortcuts in applications (e.g. while holding the pen, extend the pinkie to invoke a menu). We also investigate how well we can recognise these different pen-holding postures using data collected from an EMG armband and deep learning.",
       "images": ["projects/PenEMGIcon.jpg"],
       "institution_id": "pfn",
-      "categories": ["pen", "ml"],
+      "categories": ["pen-touch", "ai-ml"],
       "publication_ids": ["pub_iss19", "pub_springer21"]
     },
     {
@@ -110,7 +110,7 @@
       "description": "Smart domestic robots are poised to revolutionise the way household chores and everyday tasks are carried out in the home of the future. Thanks to the recent boom of deep learning and \"artificial intelligence\", machines are able to autonomously perform increasingly complex tasks. But no matter how smart these robots may be or become, humans still need to engage with them and it is paramount that such interactions occur smoothly and safely. Our research efforts in human-robot interaction aim to not only better support end users (customers) when operating robots in their home, but also facilitate the programming and training of these machines by engineers, technicians and developers.",
       "images": ["projects/HayateGesture.jpg"],
       "institution_id": "pfn",
-      "categories": ["robotics", "ml"],
+      "categories": ["robotics", "ai-ml"],
       "publication_ids": ["pub_chi19lbw", "pub_chi19hcmlws","link_ceatec18"]
     },
     {
@@ -119,7 +119,7 @@
       "description": "ColourAIze is an interactive system that analyses black and white drawings on paper, automatically determines realistic colour fills using AI and projects those colours onto the paper within the line art. In addition to selecting between multiple colouring styles, the user can specify local colour preferences to the AI via simple stylus strokes in desired areas of the drawing. This allows users to immediately and directly view potential colour fills for paper sketches or published black and white artwork such as comics.",
       "images": ["projects/ColourAIze.jpg"],
       "institution_id": "pfn",
-      "categories": ["genai", "cv","ml", "xr"],
+      "categories": ["ai-ml", "cv", "xr"],
       "publication_ids": ["pub_iss18"]
     },
     {
@@ -128,7 +128,7 @@
       "description": "This work investigates the use of different pen-holding grips while writing and drawing on a tablet to trigger various actions, including changing the pen function (e.g. to select, scroll, search) and calling in-place menus. The postures are recognised when the hand contacts the surface using a deep convolutional neural network applied on the raw touch input data (the capactitive image of the tablet). The feasibility of this approach is confirmed by two user evaluations.",
       "images": ["projects/UnimanualPT.jpg"],
       "institution_id": "pfn",
-      "categories": ["pen", "touch", "ml", "cv"],
+      "categories": ["pen-touch", "ai-ml", "cv"],
       "publication_ids": ["pub_uist18", "pub_springer21"]
     },
     {
@@ -137,7 +137,7 @@
       "description": "CursorTap is a multitouch selection technique to efficiently reach both near and distant targets on large wall displays using hybrid absolute and relative pointing. The user switches to relative mode with three-fingers of one hand while using the other hand to control a cursor, similar to a touchpad.",
       "images": ["projects/HybridPointing.png"],
       "institution_id": "waterloo",
-      "categories": ["large-displays", "touch"],
+      "categories": ["large-displays", "pen-touch"],
       "publication_ids": ["pub_iss21b"]
     },
     {
@@ -164,7 +164,7 @@
       "description": "This project looks at the performance of switching between different functions or modes for touch input (the possibility to rapidly change the output produced by the same touch action). Six techniques are evaluated in sitting and standing conditions: long press, non-dominant hand, two-fingers, hard press, knuckle, and thumb-on-finger. Our work addresses the lack of empirical evidence on the efficiency of touch mode-switching techniques and provides guidance to practitioners and researchers when designing new mode-switching methods.",
       "images": ["projects/Modeswitch.jpg"],
       "institution_id": "waterloo",
-      "categories": ["touch"],
+      "categories": ["pen-touch"],
       "publication_ids": ["pub_chi17"]
     },
     {
@@ -173,7 +173,7 @@
       "description": "Tabletop interaction can be enriched by considering whole hands as input instead of only fingertips. In this work, we propose a straightforward, easily reproducible computer vision algorithm to recognise hand contact shapes from the raw touch contact image. The technique is able to discard resting arms and supports dynamic properties such as finger movement and hover. The algorithm is used to trigger, parameterise, and dynamically control menu and tool widgets.",
       "images": ["projects/PalmFingersFanMenu.jpg"],
       "institution_id": "imld",
-      "categories": ["touch", "cv", "tabletop"],
+      "categories": ["pen-touch", "cv", "tabletop"],
       "publication_ids": ["pub_iss17"]
     },
     {
@@ -209,7 +209,7 @@
       "description": "Using a special grip- and motion-sensitive stylus and a grip-sensitive tablet, we explore a range of novel pen and touch interactions including detecting how the user holds the pen and the tablet, distinguishing between the pen-holding hand and the bare hand, discarding touches caused by resting palms while writing (palm rejection) and a number of contextual gestures resulting from the detection of those different postures.",
       "images": ["projects/MSRGripSensing.jpg"],
       "institution_id": "msr",
-      "categories": ["pen", "touch", "mobile"],
+      "categories": ["pen-touch", "mobile"],
       "publication_ids": ["pub_uist14"]
     },
     {
@@ -218,7 +218,7 @@
       "description": "In this project, we investigate how smartphones can be used as portable quick-access toolboxes held by the non-dominant hand to provide assistive touch commands for pen-driven whiteboard tasks. In particular, we consider an eyes-free UI design, which allows users to operate the handheld device in a blind manner, i.e. without having to look at it, thereby allowing them to concentrate on the pen task.",
       "images": ["projects/Eyes-free_whiteboard.jpg"],
       "institution_id": "eth",
-      "categories": ["pen", "touch", "large-displays","mobile"],
+      "categories": ["pen-touch", "large-displays", "mobile"],
       "publication_ids": ["pub_its15wb"]
     },
     {
@@ -227,7 +227,7 @@
       "description": "In this work, we present and evaluate a set of pen-based techniques to annotate maps on tablets or interactive tabletops and selectively convert those annotations into spatial queries allowing users to search for points of interests within explicitly or implicitly specified scopes, e.g. look for restaurants, hotels etc. within circled areas or along sketched paths or calculated routes.",
       "images": ["projects/PTMap.jpg"],
       "institution_id": "eth",
-      "categories": ["pen", "touch"],
+      "categories": ["pen-touch"],
       "publication_ids": ["pub_its14"]
     },
     {
@@ -239,7 +239,7 @@
         "projects/AR_application2.jpg"
       ],
       "institution_id": "eth",
-      "categories": ["doc-eng", "pen", "touch", "tabletop"],
+      "categories": ["doc-eng", "pen-touch", "tabletop"],
       "publication_ids": ["pub_thesis14", "pub_its13", "pub_chi13ws", "pub_chi13wip", "pub_uist12ds", "pub_avi12"]
     },
     {
@@ -248,7 +248,7 @@
       "description": "Combined bimanual pen and touch input is a relatively new interaction paradigm with promising prospects. Its properties are not yet well understood and hence merit to be studied. This project experimentally investigates and reports on some important issues of pen and touch input on horizontal surfaces, including aspects of speed, accuracy and coordination.",
       "images": ["projects/PTProperties.png"],
       "institution_id": "eth",
-      "categories": ["pen", "touch", "tabletop"],
+      "categories": ["pen-touch", "tabletop"],
       "publication_ids": ["pub_its12"]
     },
     {
@@ -275,7 +275,7 @@
       "description": "This system tackles the problem of finding online content based on paper documents through an intuitive touchscreen interface designed for modern scanners and multifunction printers. Touch Scan-n-Search allows the user to select elements of a scanned document (e.g. a newspaper article) and seamlessly connect to common web search services in order to retrieve the online version of the document along with related content. This is achieved by automatically extracting keyphrases from text elements in the document (obtained by OCR) and creating tappable GUI widgets to allow the user to control and fine-tune the search requests.",
       "images": ["projects/TouchScanSearch.jpg"],
       "institution_id": "ricoh",
-      "categories": ["doc-eng", "touch"],
+      "categories": ["doc-eng", "pen-touch"],
       "publication_ids": ["pub_doceng07","patent_usapp20080115080","patent_jp2008140377a"]
     },
     {
@@ -284,7 +284,7 @@
       "description": "SmartPublisher is a powerful, all-in-one application for pen-based devices with which users can quickly and intuitively create new documents by reusing individual image and text elements acquired from analogue and/or digital documents. The application is especially targeted at scanning devices with touch screen operating panels or tablet PCs connected to them (e.g. modern multifunction printers with large touch screen displays), as one of its main purposes is reuse of material obtained from scanned paper documents.",
       "images": ["projects/SmartPublisher.jpg"],
       "institution_id": "ricoh",
-      "categories": ["doc-eng", "pen"],
+      "categories": ["doc-eng", "pen-touch"],
       "publication_ids": ["pub_doceng06","patent_us8139257","patent_jp2007150858a"]
     },
     {
@@ -302,7 +302,7 @@
       "description": "This application designed for pen-operated multifunction printers integrates 2 modules that support users to send and share elements of scanned documents. The advanced scan2E-Mail function allows users to send only the desired portion of the scanned document as well as extracted text directly in the E-Mail body. The size and compression level of the sent content can also be adapted to the target recipient device (e.g. a mobile phone). The second module gives users the possibility to gather and send document elements to their work PC. The contents appear in a sidebar from which they can be dragged and dropped into desktop applications such as a word processor.",
       "images": ["projects/ContentsBar.png"],
       "institution_id": "ricoh",
-      "categories": ["doc-eng", "touch"],
+      "categories": ["doc-eng", "pen-touch"],
       "publication_ids": ["patent_us8201072","patent_usapp20120224232","patent_usapp20070220425"]
     },
     {
@@ -329,7 +329,7 @@
       "description": "The goal of this project is to provide a comprehensive solution to gather and aggregate content relevant to the user from heterogeneous sources (e.g. news articles about a particular topic) and compile the elements into a single coherent document with an appropriate layout. Several criteria are considered to define the constraints used to produce the layout: user preferences, target medium constraints, aesthetic layout rules and semantic similarity between items.",
       "images": ["projects/DocumentCompiler.jpg"],
       "institution_id": "ricoh",
-      "categories": ["doc-eng", "ml"],
+      "categories": ["doc-eng", "ai-ml"],
       "publication_ids": ["patent_usapp20090180126","patent_jp2009169536a"]
     },
     {

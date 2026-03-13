@@ -25,11 +25,9 @@
   "categories": [
     { "id": "all", "name": "すべて", "logo": null },
     { "id": "xr", "name": "XR", "logo": null },
-    { "id": "genai", "name": "生成AI", "logo": null },
-    { "id": "ml", "name": "機械学習", "logo": null },
+    { "id": "ai-ml", "name": "AI/機械学習", "logo": null },
     { "id": "cv", "name": "コンピュータビジョン", "logo": null },
-    { "id": "pen", "name": "ペン入力", "logo": null},
-    { "id": "touch", "name": "タッチ入力", "logo": null },
+    { "id": "pen-touch", "name": "ペン＆タッチ", "logo": null },
     { "id": "embodied", "name": "身体的インタラクション", "logo": null },
     { "id": "robotics", "name": "ロボティクス", "logo": null },
     { "id": "mobile", "name": "モバイル", "logo": null },

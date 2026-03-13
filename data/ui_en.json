@@ -25,11 +25,9 @@
   "categories": [
     { "id": "all", "name": "All", "logo": null },
     { "id": "xr", "name": "Extended Reality", "logo": null },
-    { "id": "genai", "name": "Generative AI", "logo": null },
-    { "id": "ml", "name": "Machine Learning", "logo": null },
+    { "id": "ai-ml", "name": "AI/Machine Learning", "logo": null },
     { "id": "cv", "name": "Computer Vision", "logo": null },
-    { "id": "pen", "name": "Pen", "logo": null},
-    { "id": "touch", "name": "Touch", "logo": null },
+    { "id": "pen-touch", "name": "Pen & Touch", "logo": null},
     { "id": "embodied", "name": "Embodied Interaction", "logo": null },
     { "id": "robotics", "name": "Robotics", "logo": null },
     { "id": "mobile", "name": "Mobile", "logo": null },

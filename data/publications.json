@@ -1,5 +1,17 @@
 [
     {
+      "id": "pub_iui26",
+      "type": "paper",
+      "title": "Understanding Reader Perception Shifts upon Disclosure of AI Authorship",
+      "authors": "Hiroki Nakano, Jo Takezawa, Fabrice Matulic, Chi-Lan Yang and Koji Yatani",
+      "venue": "Proc. 31st International Conference on Intelligent User Interfaces (IUI 2026), Paphos, Cyprus, March 2026",
+      "year": 2026,
+      "pdf": "pubs/IUI2026.pdf",
+      "video": null,
+      "doi": null,
+      "notes": null
+    },
+    {
       "id": "pub_blog25jp",
       "type": "link",
       "title": "日常の「モノ」が話し出す未来？ARとAIで生まれる新しいコミュニケーション",
@@ -79,6 +91,18 @@
       "year": 2025,
       "pdf": "pubs/CHI2025LBW_TS.pdf",
       "video": "videos/CHI2025LBW.mp4",
+      "doi": null,
+      "notes": null
+    },
+    {
+      "id": "pub_iswc25",
+      "type": "paper",
+      "title": "An Equivalent Circuit Model for 2D Embroidery Using Conductive Threads",
+      "authors": "Kazuhiro Shinoda, Sylvain Malacria, Fabrice Matulic and Koji Yatani",
+      "venue": "Proc. ACM International Symposium on Wearable Computers (ISWC 2025), Espoo, Finland, October 2025",
+      "year": 2025,
+      "pdf": "pubs/ISWC2025.pdf",
+      "video": null,
       "doi": null,
       "notes": null
     },
