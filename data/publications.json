@@ -1,5 +1,29 @@
 [
     {
+      "id": "pub_ieeecga26",
+      "type": "paper",
+      "title": "Interactive Texture Segmentation of 3-D Scanned Models Leveraging Multiview Automatic Segmentation",
+      "authors": "Koki Madono, Takeo Igarashi, Hiroharu Kato, Taisuke Hashimoto, Fabrice Matulic, Tsukasa Takagi and Keita Higuchi",
+      "venue": "IEEE Computer Graphics and Applications, Volume 46, Issue 3, pp. 54-67, May-June 2026",
+      "year": 2026,
+      "pdf": "pubs/IEEECGA2026.pdf",
+      "video": null,
+      "doi": "10.1109/MCG.2025.3595378",
+      "notes": null
+    },
+    {
+      "id": "pub_ijabc26",
+      "type": "paper",
+      "title": "Papagaio: A Standalone Device for Non-Professional Caregivers to Support Behavioral Transitions in Autistic Children",
+      "authors": "Yuya Miyawaki, Felipe Okuno Matsumoto, Vinicius Akio Yano, Shoko Kimura, Ayaka Fujii, Fabrice Matulic and Tetsuaki Baba",
+      "venue": "International Journal of Activity and Behavior Computing, Volume 2026, Issue 1, pp. 1-20, April 2026",
+      "year": 2026,
+      "pdf": "pubs/IJABC2026.pdf",
+      "video": null,
+      "doi": "10.60401/ijabc.151",
+      "notes": null
+    },
+    {
       "id": "pub_iui26",
       "type": "paper",
       "title": "Understanding Reader Perception Shifts upon Disclosure of AI Authorship",
