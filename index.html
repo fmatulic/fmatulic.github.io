@@ -5,18 +5,20 @@
     <meta name="description" content=""> <title></title> <link rel="stylesheet" href="css/style.css">
     </head>
 <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
     <header>
         <div class="container header-content">
             <h1 id="header-name"></h1>
-            <nav>
-                <button id="lang-switch" data-target-lang=""></button>
+            <nav aria-label="Language">
+                <button id="lang-switch" type="button" data-target-lang=""></button>
             </nav>
         </div>
     </header>
 
-    <main class="container">
-        <section id="intro" class="intro-section content-section">
-            <img id="profile-pic" src="img/profile.jpg" alt="Profile Photo" class="profile-pic">
+    <main id="main-content" class="container" tabindex="-1">
+        <section id="intro" class="intro-section content-section" aria-labelledby="intro-title">
+            <h2 id="intro-title" class="sr-only">Introduction</h2>
+            <img id="profile-pic" src="img/profile.jpg" alt="Portrait of Fabrice Matulic" class="profile-pic">
             <div class="intro-text">
                 <p id="intro-paragraph">I am a <strong>Senior Researcher</strong> at Preferred Networks Inc., Japan, and <strong>Assistant Professor</strong> at the University of Waterloo, Canada, in <strong>Human-Computer Interaction (HCI), Extended Reality (XR) and Applied AI</strong>. I have over 20 years of international experience leading research projects across academia and industry in multiple countries, including Canada (University of Waterloo), Germany (Technische Universität Dresden), the US (Microsoft Research, Redmond), Switzerland (ETH Zurich) and Japan (Ricoh and Preferred Networks, Tokyo). My current research explores novel interactive experiences and techniques that leverage the power of AI, mainly in XR, but also for interactive surfaces, mobile devices and embodied interaction. My work has resulted in over 50 contributions, including research papers at top-tier HCI conferences (CHI, UIST, ISS, etc.), several of which received awards, and numerous patents.</p> </div>
         </section>
@@ -25,26 +27,30 @@
             <img id="teaser-anim" src="img/teaser.gif" alt="" class="teaser-animation">
             </section>
 
-        <section id="research" class="content-section">
-            <nav class="tab-nav">
-                <button id="tab-btn-projects" class="tab-button active" data-tab="projects-view"></button>
-                <button id="tab-btn-publications" class="tab-button" data-tab="publications-view"></button>
-                <button id="tab-btn-services" class="tab-button" data-tab="services-view"></button>
-                <button id="tab-btn-contact" class="tab-button" data-tab="contact-view"></button>
+        <section id="research" class="content-section" aria-labelledby="research-title">
+            <h2 id="research-title" class="sr-only">Research and contact information</h2>
+            <nav class="tab-nav" aria-label="Section navigation" role="tablist">
+                <button id="tab-btn-projects" class="tab-button active" type="button" role="tab" aria-controls="projects-view" aria-selected="true" data-tab="projects-view"></button>
+                <button id="tab-btn-publications" class="tab-button" type="button" role="tab" aria-controls="publications-view" aria-selected="false" tabindex="-1" data-tab="publications-view"></button>
+                <button id="tab-btn-services" class="tab-button" type="button" role="tab" aria-controls="services-view" aria-selected="false" tabindex="-1" data-tab="services-view"></button>
+                <button id="tab-btn-contact" class="tab-button" type="button" role="tab" aria-controls="contact-view" aria-selected="false" tabindex="-1" data-tab="contact-view"></button>
             </nav>
 
+            <div id="screen-reader-status" class="sr-only" aria-live="polite" aria-atomic="true"></div>
             <div id="tab-content">
-                <div id="projects-view" class="tab-pane active">
+                <div id="projects-view" class="tab-pane active" role="tabpanel" aria-labelledby="tab-btn-projects">
+                    <h2 class="sr-only">Projects</h2>
                     <div id="research-controls">
                          <div class="control-group">
                              <h3 id="categories-title"></h3>
-                             <div id="category-filter" class="filter-buttons"></div>
+                             <div id="category-filter" class="filter-buttons" role="group" aria-labelledby="categories-title"></div>
                          </div>
                     </div>
                     <div id="projects-list" class="projects-container"></div>
                 </div>
 
-                <div id="publications-view" class="tab-pane">
+                <div id="publications-view" class="tab-pane" role="tabpanel" aria-labelledby="tab-btn-publications" hidden>
+                     <h2 class="sr-only">Publications</h2>
                      <ul id="publications-list-all" class="publications-list-container"></ul>
                      <section id="patents" class="subsection">
                          <h2 id="patents-title"></h2>
@@ -52,13 +58,14 @@
                      </section>
                 </div>
 
-                 <div id="services-view" class="tab-pane">
+                 <div id="services-view" class="tab-pane" role="tabpanel" aria-labelledby="tab-btn-services" hidden>
                      <h2 id="services-title"></h2>
                      <div id="services-content" class="service-description">
                          </div>
                 </div>
 
-                <div id="contact-view" class="tab-pane">
+                <div id="contact-view" class="tab-pane" role="tabpanel" aria-labelledby="tab-btn-contact" hidden>
+                     <h2 class="sr-only">Contact</h2>
                      <div id="contact-details" class="contact-info">
                          </div>
                 </div>
