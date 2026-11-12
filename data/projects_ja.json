@@ -8,7 +8,7 @@
       "projects/ARCharacters_jp.jpg"
     ],
     "institution_id": "pfn",
-    "categories": ["xr", "genai"],
+    "categories": ["xr", "ai-ml"],
     "publication_ids": ["pub_blog25jp","pub_chi25lbw_arc","pub_chi25w"]
   },
   {
@@ -30,7 +30,7 @@
       "projects/DesktopPhoneVR.jpg"
     ],
     "institution_id": "pfn",
-    "categories": ["xr", "touch", "mobile", "cv", "ml"],
+    "categories": ["xr", "pen-touch", "mobile", "cv", "ai-ml"],
     "publication_ids": ["pub_chi25lbw_pvr"]
   },
   {
@@ -42,7 +42,7 @@
       "projects/DataAugment.jpg"
     ],
     "institution_id": "pfn",
-    "categories": ["ml", "cv"],
+    "categories": ["ai-ml", "cv"],
     "publication_ids": ["pub_chi25lbw_ts","pub_iui25","pub_siggraphasia23tc", "pub_iss23", "pub_chi23lbw2"]
   },
   {
@@ -63,7 +63,7 @@
       "projects/VRTerrainModelling.jpg"
     ],
     "institution_id": "pfn",
-    "categories": ["xr", "embodied", "pen","touch"],
+    "categories": ["xr", "embodied", "pen-touch"],
     "publication_ids": ["pub_gi23", "pub_chi22lbw"]
   },
   {
@@ -72,7 +72,7 @@
     "description": "Typealikeは、自然なタイピング姿勢に近い手の形を利用して、ラップトップPC上でコマンドを素早く実行するための手法です。この手の姿勢は、ラップトップのウェブカメラが下向きの鏡を通して捉えた画像を、ディープラーニングによる分類を用いて認識します。",
     "images": ["projects/Typealike.png"],
     "institution_id": "pfn",
-    "categories": ["ml", "cv", "embodied"],
+    "categories": ["ai-ml", "cv", "embodied"],
     "publication_ids": ["pub_iss21a"]
   },
   {
@@ -84,7 +84,7 @@
       "projects/PhoneVR2.jpg"
     ],
     "institution_id": "pfn",
-    "categories": ["xr", "mobile", "cv", "ml","touch"],
+    "categories": ["xr", "mobile", "cv", "ai-ml", "pen-touch"],
     "publication_ids": ["pub_gi24", "pub_chi23lbw", "pub_chi21"]
   },
   {
@@ -93,7 +93,7 @@
     "description": "PenSightは、ペン上部に取り付け下向きにした魚眼レンズカメラを用いてタブレット上でのペンインタラクションを強化する新しいコンセプトです。この構成により、カメラは使用者の手や周囲の環境を「見る」ことができます。ディープラーニングを活用することで、様々な手の姿勢やタブレットの持ち方を認識し、アクションのクイック起動や、周囲の書類などタブレット外コンテンツの取り込みを可能にします。",
     "images": ["projects/PenSight.jpg"],
     "institution_id": "pfn",
-    "categories": ["pen", "cv", "ml"],
+    "categories": ["pen-touch", "cv", "ai-ml"],
     "publication_ids": ["pub_chi20", "pub_springer21"]
   },
   {
@@ -102,7 +102,7 @@
     "description": "本プロジェクトでは、アプリケーション内のアクションやショートカットを起動するために（例：ペンを持ったまま小指を伸ばしてメニューを呼び出す）、ユーザーがどのような代替的なデジタルペンの持ち方を選択するかを調査します。また、EMG（筋電）アームバンドから収集したデータとディープラーニングを用いて、これらの多様なペンの持ち方をどの程度正確に認識できるかについても検証します。",
     "images": ["projects/PenEMGIcon.jpg"],
     "institution_id": "pfn",
-    "categories": ["pen", "ml"],
+    "categories": ["pen-touch", "ai-ml"],
     "publication_ids": ["pub_iss19", "pub_springer21"]
   },
   {
@@ -111,7 +111,7 @@
     "description": "スマートな家庭用ロボットは、未来の家庭における家事や日常業務のあり方を革新する可能性を秘めています。近年のディープラーニングと「人工知能」の急速な発展により、機械はますます複雑なタスクを自律的に実行できるようになりました。しかし、ロボットがいかに賢くなっても、人間との関わりは不可欠であり、そのインタラクションが円滑かつ安全に行われることが極めて重要です。私たちのヒューマン・ロボット・インタラクション研究は、エンドユーザー（顧客）が自宅でロボットを操作する際の支援を向上させるだけでなく、エンジニア、技術者、開発者によるロボットのプログラミングや学習を容易にすることも目指しています。",
     "images": ["projects/HayateGesture.jpg"],
     "institution_id": "pfn",
-    "categories": ["robotics", "ml"],
+    "categories": ["robotics", "ai-ml"],
     "publication_ids": ["pub_chi19lbw", "pub_chi19hcmlws","link_ceatec18"]
   },
   {
@@ -120,7 +120,7 @@
     "description": "ColourAIzeは、紙上の白黒線画を分析し、AIを用いて自動的に写実的な色を決定し、その色を線画内にプロジェクションするインタラクティブシステムです。複数の着色スタイルから選択できるほか、ユーザーは描画内の目的の領域に簡単なスタイラス操作を行うことで、局所的な色の好みをAIに指定できます。これにより、紙のスケッチや漫画などの公開された白黒アートワークに対して、可能性のある着色を即座にかつ直接的に確認することが可能になります。",
     "images": ["projects/ColourAIze.jpg"],
     "institution_id": "pfn",
-    "categories": ["genai", "cv","ml", "xr"],
+    "categories": ["ai-ml", "cv", "xr"],
     "publication_ids": ["pub_iss18"]
   },
   {
@@ -129,7 +129,7 @@
     "description": "本研究では、タブレット上での筆記や描画中にペンの持ち方を変えることで、ペン機能の変更（例：選択、スクロール、検索）やその場でのメニュー呼び出しなど、様々なアクションを起動する方法を探求します。手の姿勢は、手が表面に接触した際に、タブレットの静電容量画像（rawタッチ入力データ）にディープ畳み込みニューラルネットワークを適用することで認識されます。このアプローチの実現可能性は、２つのユーザー評価によって確認されています。",
     "images": ["projects/UnimanualPT.jpg"],
     "institution_id": "pfn",
-    "categories": ["pen", "touch", "ml", "cv"],
+    "categories": ["pen-touch", "ai-ml", "cv"],
     "publication_ids": ["pub_uist18", "pub_springer21"]
   },
   {
@@ -138,7 +138,7 @@
     "description": "CursorTapは、ハイブリッドな絶対・相対ポインティングを用いて、大型壁面ディスプレイ上の近距離・遠距離両方のターゲットを効率的に選択するためのマルチタッチ技術です。ユーザーは片手の３本指で相対モードに切り替え、もう一方の手でタッチパッドのようにカーソルを操作します。",
     "images": ["projects/HybridPointing.png"],
     "institution_id": "waterloo",
-    "categories": ["large-displays", "touch"],
+    "categories": ["large-displays", "pen-touch"],
     "publication_ids": ["pub_iss21b"]
   },
   {
@@ -165,7 +165,7 @@
     "description": "本プロジェクトでは、タッチ入力における異なる機能やモード間の切り替え（同じタッチ操作が生み出す結果を素早く変更する可能性）のパフォーマンスを調査します。長押し、非利き手、２本指、強く押す、指関節、指の上に親指を乗せる、という６つの技術を、座位および立位の条件下で評価しました。本研究は、タッチによるモード切替技術の効率に関する実証的証拠の不足に対応し、実践者や研究者が新しいモード切替手法を設計する際の指針を提供します。",
     "images": ["projects/Modeswitch.jpg"],
     "institution_id": "waterloo",
-    "categories": ["touch"],
+    "categories": ["pen-touch"],
     "publication_ids": ["pub_chi17"]
   },
   {
@@ -174,7 +174,7 @@
     "description": "テーブルトップインタラクションは、指先だけでなく手全体を入力として考慮することで、より豊かになります。本研究では、rawタッチ接触画像から手の接触形状を認識するための、単純かつ再現容易なコンピュータビジョンアルゴリズムを提案します。この技術は、静止している腕を除外し、指の動きやホバーといった動的な特性もサポートします。このアルゴリズムを用いて、メニューやツールウィジェットの起動、パラメータ設定、動的な制御を行います。",
     "images": ["projects/PalmFingersFanMenu.jpg"],
     "institution_id": "imld",
-    "categories": ["touch", "cv", "tabletop"],
+    "categories": ["pen-touch", "cv", "tabletop"],
     "publication_ids": ["pub_iss17"]
   },
   {
@@ -210,7 +210,7 @@
     "description": "特殊なグリップおよび動きを感知するスタイラスと、グリップを感知するタブレットを使用し、ユーザーがペンやタブレットをどのように持っているかの検出、ペンを持っている手と持っていない手の区別、筆記中に静止した手のひらによるタッチの除去（パームリジェクション）、そしてこれらの異なる姿勢の検出から生じる多数のコンテキストに応じたジェスチャーを含む、新しいペン＆タッチインタラクションの範囲を探求します。",
     "images": ["projects/MSRGripSensing.jpg"],
     "institution_id": "msr",
-    "categories": ["pen", "touch", "mobile"],
+    "categories": ["pen-touch", "mobile"],
     "publication_ids": ["pub_uist14"]
   },
   {
@@ -219,7 +219,7 @@
     "description": "本プロジェクトでは、スマートフォンを非利き手で持つ携帯可能なクイックアクセスツールボックスとして利用し、ペン主導のホワイトボードタスクを補助するタッチコマンドを提供する方法を調査します。特に、ユーザーがデバイスを視認することなく（見ずに）操作できるアイズフリーUIデザインを検討し、これによりユーザーがペンタスクに集中できるようにします。",
     "images": ["projects/Eyes-free_whiteboard.jpg"],
     "institution_id": "eth",
-    "categories": ["pen", "touch", "large-displays","mobile"],
+    "categories": ["pen-touch", "large-displays", "mobile"],
     "publication_ids": ["pub_its15wb"]
   },
   {
@@ -228,7 +228,7 @@
     "description": "本研究では、タブレットやインタラクティブテーブルトップ上の地図にペンで注釈を付け、それらの注釈を選択的に空間クエリに変換する一連のペンベース技術を提示し、評価します。これにより、ユーザーは明示的または暗黙的に指定された範囲内で興味のある地点（POI）を検索できます（例：円で囲んだエリア内や描画した経路沿いのレストラン、ホテルなど）。",
     "images": ["projects/PTMap.jpg"],
     "institution_id": "eth",
-    "categories": ["pen", "touch"],
+    "categories": ["pen-touch"],
     "publication_ids": ["pub_its14"]
   },
   {
@@ -240,7 +240,7 @@
       "projects/AR_application2.jpg"
     ],
     "institution_id": "eth",
-    "categories": ["doc-eng", "pen", "touch", "tabletop"],
+    "categories": ["doc-eng", "pen-touch", "tabletop"],
     "publication_ids": ["pub_thesis14", "pub_its13", "pub_chi13ws", "pub_chi13wip", "pub_uist12ds", "pub_avi12"]
   },
   {
@@ -249,7 +249,7 @@
     "description": "ペンとタッチを組み合わせた両手入力は、有望な比較的新しいインタラクションパラダイムです。しかし、その特性はまだ十分に理解されておらず、研究する価値があります。本プロジェクトでは、水平面上でのペン＆タッチ入力に関するいくつかの重要な側面（速度、精度、協調性などを含む）を実験的に調査し、報告します。",
     "images": ["projects/PTProperties.png"],
     "institution_id": "eth",
-    "categories": ["pen", "touch", "tabletop"],
+    "categories": ["pen-touch", "tabletop"],
     "publication_ids": ["pub_its12"]
   },
   {
@@ -276,7 +276,7 @@
     "description": "このシステムは、最新のスキャナや複合機向けに設計された直感的なタッチスクリーンインターフェースを通じて、紙文書に基づいたオンラインコンテンツの検索問題を解決します。Touch Scan-n-Searchを使用すると、ユーザーはスキャンされた文書の要素（例：新聞記事）を選択し、一般的なウェブ検索サービスにシームレスに接続して、文書のオンライン版や関連コンテンツを取得できます。これは、文書内のテキスト要素から（OCRを介して）キーフレーズを自動的に抽出し、ユーザーが検索要求を制御および微調整できるタップ可能なGUIウィジェットを作成することによって実現されます。",
     "images": ["projects/TouchScanSearch.jpg"],
     "institution_id": "ricoh",
-    "categories": ["doc-eng", "touch"],
+    "categories": ["doc-eng", "pen-touch"],
     "publication_ids": ["pub_doceng07","patent_usapp20080115080","patent_jp2008140377a"]
   },
   {
@@ -285,7 +285,7 @@
     "description": "SmartPublisherは、ペンベースデバイス向けの強力なオールインワンアプリケーションであり、ユーザーはアナログおよび/またはデジタル文書から取得した個々の画像やテキスト要素を再利用して、迅速かつ直感的に新しい文書を作成できます。このアプリケーションは、特にタッチスクリーン操作パネルを備えたスキャンデバイスや、それに接続されたタブレットPC（例：大型タッチスクリーンを備えた最新の複合機）を対象としており、その主な目的の1つは、スキャンされた紙文書からの素材の再利用です。",
     "images": ["projects/SmartPublisher.jpg"],
     "institution_id": "ricoh",
-    "categories": ["doc-eng", "pen"],
+    "categories": ["doc-eng", "pen-touch"],
     "publication_ids": ["pub_doceng06","patent_us8139257","patent_jp2007150858a"]
   },
   {
@@ -303,7 +303,7 @@
     "description": "ペン操作の複合機向けに設計されたこのアプリケーションは、ユーザーがスキャンした文書の要素を送信および共有するのを支援する2つのモジュールを統合しています。高度なスキャンto Eメール機能により、ユーザーはスキャンした文書の目的の部分のみを送信したり、抽出されたテキストを直接Eメール本文に含めたりすることができます。送信されるコンテンツのサイズと圧縮レベルは、ターゲットとなる受信側デバイス（例：携帯電話）に合わせて調整することも可能です。2番目のモジュールでは、ユーザーは文書要素を収集して自分の業務用PCに送信できます。コンテンツはサイドバーに表示され、そこからワープロなどのデスクトップアプリケーションにドラッグ＆ドロップできます。",
     "images": ["projects/ContentsBar.png"],
     "institution_id": "ricoh",
-    "categories": ["doc-eng", "touch"],
+    "categories": ["doc-eng", "pen-touch"],
     "publication_ids": ["patent_us8201072","patent_usapp20120224232","patent_usapp20070220425"]
   },
   {
@@ -330,7 +330,7 @@
     "description": "このプロジェクトの目標は、異種のソース（例：特定のトピックに関するニュース記事）からユーザーに関連するコンテンツを収集・集約し、それらの要素を適切なレイアウトを持つ単一の一貫した文書にコンパイルするための包括的なソリューションを提供することです。レイアウトを生成するための制約を定義する際には、ユーザーの好み、ターゲット媒体の制約、美的レイアウトルール、および項目間の意味的類似性など、いくつかの基準が考慮されます。",
     "images": ["projects/DocumentCompiler.jpg"],
     "institution_id": "ricoh",
-    "categories": ["doc-eng", "ml"],
+    "categories": ["doc-eng", "ai-ml"],
     "publication_ids": ["patent_usapp20090180126","patent_jp2009169536a"]
   },
   {

@@ -1,5 +1,41 @@
 [
     {
+      "id": "pub_ieeecga26",
+      "type": "paper",
+      "title": "Interactive Texture Segmentation of 3-D Scanned Models Leveraging Multiview Automatic Segmentation",
+      "authors": "Koki Madono, Takeo Igarashi, Hiroharu Kato, Taisuke Hashimoto, Fabrice Matulic, Tsukasa Takagi and Keita Higuchi",
+      "venue": "IEEE Computer Graphics and Applications, Volume 46, Issue 3, pp. 54-67, May-June 2026",
+      "year": 2026,
+      "pdf": "pubs/IEEECGA2026.pdf",
+      "video": null,
+      "doi": "10.1109/MCG.2025.3595378",
+      "notes": null
+    },
+    {
+      "id": "pub_ijabc26",
+      "type": "paper",
+      "title": "Papagaio: A Standalone Device for Non-Professional Caregivers to Support Behavioral Transitions in Autistic Children",
+      "authors": "Yuya Miyawaki, Felipe Okuno Matsumoto, Vinicius Akio Yano, Shoko Kimura, Ayaka Fujii, Fabrice Matulic and Tetsuaki Baba",
+      "venue": "International Journal of Activity and Behavior Computing, Volume 2026, Issue 1, pp. 1-20, April 2026",
+      "year": 2026,
+      "pdf": "pubs/IJABC2026.pdf",
+      "video": null,
+      "doi": "10.60401/ijabc.151",
+      "notes": null
+    },
+    {
+      "id": "pub_iui26",
+      "type": "paper",
+      "title": "Understanding Reader Perception Shifts upon Disclosure of AI Authorship",
+      "authors": "Hiroki Nakano, Jo Takezawa, Fabrice Matulic, Chi-Lan Yang and Koji Yatani",
+      "venue": "Proc. 31st International Conference on Intelligent User Interfaces (IUI 2026), Paphos, Cyprus, March 2026",
+      "year": 2026,
+      "pdf": "pubs/IUI2026.pdf",
+      "video": null,
+      "doi": "10.1145/3742413.3789076",
+      "notes": null
+    },
+    {
       "id": "pub_blog25jp",
       "type": "link",
       "title": "日常の「モノ」が話し出す未来？ARとAIで生まれる新しいコミュニケーション",
@@ -31,7 +67,7 @@
       "year": 2025,
       "pdf": "pubs/CHI2025LBW_ARC.pdf",
       "video": "https://www.youtube.com/watch?v=RkRc7TRDPDQ",
-      "doi": null,
+      "doi": "10.1145/3706599.3719978",
       "notes": null
     },
     {
@@ -55,7 +91,7 @@
       "year": 2025,
       "pdf": "pubs/CHI2025LBW_PVR.pdf",
       "video": "https://www.youtube.com/watch?v=QeBpYXaqToQ",
-      "doi": null,
+      "doi": "10.1145/3706599.3719768",
       "notes": null
     },
     {
@@ -67,7 +103,7 @@
       "year": 2025,
       "pdf": "pubs/CHI2025LBW_SVR.pdf",
       "video": "https://www.youtube.com/watch?v=AB8PnzbKDOU",
-      "doi": null,
+      "doi": "10.1145/3706599.3720040",
       "notes": null
     },
     {
@@ -79,7 +115,19 @@
       "year": 2025,
       "pdf": "pubs/CHI2025LBW_TS.pdf",
       "video": "videos/CHI2025LBW.mp4",
-      "doi": null,
+      "doi": "10.1145/3706599.3719697",
+      "notes": null
+    },
+    {
+      "id": "pub_iswc25",
+      "type": "paper",
+      "title": "An Equivalent Circuit Model for 2D Embroidery Using Conductive Threads",
+      "authors": "Kazuhiro Shinoda, Sylvain Malacria, Fabrice Matulic and Koji Yatani",
+      "venue": "Proc. ACM International Symposium on Wearable Computers (ISWC 2025), Espoo, Finland, October 2025",
+      "year": 2025,
+      "pdf": "pubs/ISWC2025.pdf",
+      "video": null,
+      "doi": "10.1145/3715071.3750414",
       "notes": null
     },
     {
@@ -91,7 +139,7 @@
       "year": 2025,
       "pdf": "pubs/IUI2025.pdf",
       "video": "videos/IUI2025.mp4",
-      "doi": null,
+      "doi": "10.1145/3708359.3712141",
       "notes": null
     },
     {
@@ -103,7 +151,7 @@
       "year": 2024,
       "pdf": "pubs/GI2024.pdf",
       "video": "https://www.youtube.com/watch?v=puchckJFSCY",
-      "doi": null,
+      "doi": "10.1145/3670947.3670961",
       "notes": null
     },
     {
@@ -115,7 +163,7 @@
       "year": 2023,
       "pdf": "pubs/SIGGRAPHAsia2023TC.pdf",
       "video": "https://www.youtube.com/watch?v=qwU-OiYsZ-g",
-      "doi": null,
+      "doi": "10.1145/3610543.3626170",
       "notes": null
     },
     {
@@ -127,7 +175,7 @@
       "year": 2023,
       "pdf": "pubs/ISS2023.pdf",
       "video": "https://www.youtube.com/watch?v=PT-PElgtQcI",
-      "doi": null,
+      "doi": "10.1145/3626476",
       "notes": null
     },
     {
@@ -151,7 +199,7 @@
       "year": 2023,
       "pdf": "pubs/CHI2023.pdf",
       "video": "https://www.youtube.com/watch?v=U0kusO7hH1g",
-      "doi": null,
+      "doi": "10.1145/3544548.3581121",
       "notes": null
     },
     {
@@ -163,7 +211,7 @@
       "year": 2023,
       "pdf": "pubs/CHI2023LBW.pdf",
       "video": "https://www.youtube.com/watch?v=hNPKkb-ml6k",
-      "doi": null,
+      "doi": "10.1145/3544549.3585728",
       "notes": null
     },
     {
@@ -175,7 +223,7 @@
       "year": 2023,
       "pdf": "pubs/CHI2023LBW2.pdf",
       "video": "https://www.youtube.com/watch?v=HklROgx4iNA",
-      "doi": null,
+      "doi": "10.1145/3544549.3585856",
       "notes": null
     },
     {
@@ -187,7 +235,7 @@
       "year": 2022,
       "pdf": "pubs/CHI2022LBW.pdf",
       "video": "https://www.youtube.com/watch?v=X32PX08XXYQ",
-      "doi": null,
+      "doi": "10.1145/3491101.3519867",
       "notes": null
     },
     {
@@ -199,7 +247,7 @@
       "year": 2021,
       "pdf": "pubs/ISS2021a.pdf",
       "video": "https://www.youtube.com/watch?v=QyfMicxQH84",
-      "doi": null,
+      "doi": "10.1145/3486952",
       "notes": "Honourable Mention Award"
     },
     {
@@ -211,7 +259,7 @@
       "year": 2021,
       "pdf": "pubs/ISS2021b.pdf",
       "video": "https://www.youtube.com/watch?v=drMl3CTLrP0",
-      "doi": null,
+      "doi": "10.1145/3488540",
       "notes": null
     },
     {
@@ -223,7 +271,7 @@
       "year": 2021,
       "pdf": "https://link.springer.com/chapter/10.1007/978-3-030-82681-9_7",
       "video": null,
-      "doi": null,
+      "doi": "10.1007/978-3-030-82681-9_7",
       "notes": null
     },
     {
@@ -235,7 +283,7 @@
       "year": 2021,
       "pdf": "pubs/CHI2021.pdf",
       "video": "https://www.youtube.com/watch?v=fMeDbZRSVAE",
-      "doi": null,
+      "doi": "10.1145/3411764.3445583",
       "notes": null
     },
     {
@@ -247,7 +295,7 @@
       "year": 2020,
       "pdf": "pubs/CHI2020.pdf",
       "video": "https://www.youtube.com/watch?v=x4cobX5RTc8",
-      "doi": null,
+      "doi": "10.1145/3313831.3376147",
       "notes": "Best Paper Award"
     },
     {
@@ -259,7 +307,7 @@
       "year": 2019,
       "pdf": "pubs/ISS2019.pdf",
       "video": "https://www.youtube.com/watch?v=yNXyQYevaBY",
-      "doi": null,
+      "doi": "10.1145/3343055.3359720",
       "notes": null
     },
     {
@@ -271,7 +319,7 @@
       "year": 2019,
       "pdf": "pubs/CHI2019.pdf",
       "video": "https://www.youtube.com/watch?v=2TKuZsPFjoI",
-      "doi": null,
+      "doi": "10.1145/3290605.3300426",
       "notes": "Honourable Mention Award"
     },
     {
@@ -283,7 +331,7 @@
       "year": 2019,
       "pdf": "pubs/CHI2019LBW.pdf",
       "video": "https://youtu.be/0dCXx-0sGUY",
-      "doi": null,
+      "doi": "10.1145/3290607.3312791",
       "notes": null
     },
     {
@@ -319,7 +367,7 @@
       "year": 2018,
       "pdf": "pubs/ISS2018.pdf",
       "video": "https://www.youtube.com/watch?v=DYZzhK0ywiQ",
-      "doi": null,
+      "doi": "10.1145/3279778.3279785",
       "notes": null
     },
     {
@@ -331,7 +379,7 @@
       "year": 2018,
       "pdf": "pubs/UIST2018.pdf",
       "video": "https://youtu.be/RqpRRSvNbAM",
-      "doi": null,
+      "doi": "10.1145/3242587.3242652",
       "notes": null
     },
     {
@@ -343,7 +391,7 @@
       "year": 2018,
       "pdf": "pubs/CHI2018.pdf",
       "video": "https://www.youtube.com/watch?v=y2_VbVrpgq4",
-      "doi": null,
+      "doi": "10.1145/3173574.3173819",
       "notes": "Honourable Mention Award"
     },
     {
@@ -355,7 +403,7 @@
       "year": 2017,
       "pdf": "pubs/ISS2017.pdf",
       "video": "https://www.youtube.com/watch?v=0DY5ni1c9a4",
-      "doi": null,
+      "doi": "10.1145/3132272.3134126",
       "notes": null
     },
     {
@@ -367,7 +415,7 @@
       "year": 2017,
       "pdf": "pubs/CHI2017.pdf",
       "video": "https://www.youtube.com/watch?v=CtcN9kpQy9s",
-      "doi": null,
+      "doi": "10.1145/3025453.3025865",
       "notes": null
     },
     {
@@ -379,7 +427,7 @@
       "year": 2016,
       "pdf": "pubs/CHI2016LBW_EIP.pdf",
       "video": "videos/EmbeddedPres.mp4",
-      "doi": null,
+      "doi": "10.1145/2851581.2892501",
       "notes": null
     },
     {
@@ -391,7 +439,7 @@
       "year": 2016,
       "pdf": "pubs/CHI2016LBW_SP.pdf",
       "video": "videos/SmartProj.mp4",
-      "doi": null,
+      "doi": "10.1145/2851581.2892545",
       "notes": null
     },
     {
@@ -403,7 +451,7 @@
       "year": 2015,
       "pdf": "pubs/ITS2015Whiteboard.pdf",
       "video": "videos/ITS2015Whiteboard.mp4",
-      "doi": null,
+      "doi": "10.1145/2817721.2817728",
       "notes": null
     },
     {
@@ -427,7 +475,7 @@
       "year": 2015,
       "pdf": "pubs/ITS2015Bodylenses.pdf",
       "video": "videos/ITS2015Bodylenses.mp4",
-      "doi": null,
+      "doi": "10.1145/2817721.2817726",
       "notes": null
     },
     {
@@ -439,7 +487,7 @@
       "year": 2014,
       "pdf": "pubs/ITS2014.pdf",
       "video": "videos/ITS2014.avi",
-      "doi": null,
+      "doi": "10.1145/2669485.2669513",
       "notes": null
     },
     {
@@ -451,7 +499,7 @@
       "year": 2014,
       "pdf": "pubs/UIST2014.pdf",
       "video": "https://youtu.be/9dgHgHQSuuY",
-      "doi": null,
+      "doi": "10.1145/2642918.2647379",
       "notes": "Best Paper Award"
     },
     {
@@ -475,7 +523,7 @@
       "year": 2013,
       "pdf": "pubs/MIPR.pdf",
       "video": null,
-      "doi": null,
+      "doi": "10.1109/ISM.2013.84",
       "notes": null
     },
     {
@@ -487,7 +535,7 @@
       "year": 2013,
       "pdf": "pubs/ITS2013.pdf",
       "video": "videos/ITS2013.mp4",
-      "doi": null,
+      "doi": "10.1145/2512349.2512802",
       "notes": null
     },
     {
@@ -511,7 +559,7 @@
       "year": 2013,
       "pdf": "pubs/CHI2013WIP.pdf",
       "video": null,
-      "doi": null,
+      "doi": "10.1145/2468356.2468569",
       "notes": null
     },
     {
@@ -526,7 +574,7 @@
       "doi": null,
       "notes": "TV Feature (Active Reading App)"
     },
-     {
+    {
       "id": "link_sf1_einstein",
       "type": "link",
       "title": "Featured on SF 1 'Einstein' (Swiss TV)",
@@ -559,7 +607,7 @@
       "year": 2012,
       "pdf": "pubs/ITS2012.pdf",
       "video": "videos/PT_Study.mp4",
-      "doi": null,
+      "doi": "10.1145/2396636.2396659",
       "notes": null
     },
     {
@@ -571,7 +619,7 @@
       "year": 2012,
       "pdf": "pubs/UIST2012DS.pdf",
       "video": null,
-      "doi": null,
+      "doi": "10.1145/2380296.2380314",
       "notes": null
     },
     {
@@ -595,7 +643,7 @@
       "year": 2012,
       "pdf": "pubs/AVI2012.pdf",
       "video": "videos/Supporting_AR.mp4",
-      "doi": null,
+      "doi": "10.1145/2254556.2254669",
       "notes": null
     },
     {
@@ -607,7 +655,7 @@
       "year": 2011,
       "pdf": "pubs/DocEng2011.pdf",
       "video": null,
-      "doi": null,
+      "doi": "10.1145/2034691.2034737",
       "notes": null
     },
     {
@@ -619,7 +667,7 @@
       "year": 2011,
       "pdf": "pubs/CHI2011.pdf",
       "video": null,
-      "doi": null,
+      "doi": "10.1145/1978942.1979164",
       "notes": "Honorable Mention Award"
     },
     {
@@ -727,10 +775,10 @@
       "year": 2008,
       "pdf": "pubs/ICDIM2008.pdf",
       "video": null,
-      "doi": null,
+      "doi": "10.1109/ICDIM.2008.4746708",
       "notes": null
     },
-     {
+    {
       "id": "patent_us20080115080",
       "type": "patent",
       "title": "US Patent Application 20080115080: Device, method and computer program product for information retrieval",
@@ -775,7 +823,7 @@
       "year": 2007,
       "pdf": "pubs/DocEng2007.pdf",
       "video": null,
-      "doi": null,
+      "doi": "10.1145/1284420.1284448",
       "notes": null
     },
     {
@@ -811,7 +859,7 @@
       "year": 2006,
       "pdf": "pubs/DocEng2006.pdf",
       "video": null,
-      "doi": null,
+      "doi": "10.1145/1166160.1166207",
       "notes": null
     },
     {
@@ -1138,4 +1186,4 @@
       "doi": null,
       "notes": null
     }
-  ]
+]

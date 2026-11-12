@@ -1,0 +1,22 @@
+* text=auto eol=lf
+
+# Web source and data files should stay LF-normalized in the repository.
+*.css  text eol=lf
+*.html text eol=lf
+*.js   text eol=lf
+*.json text eol=lf
+*.md   text eol=lf
+*.txt  text eol=lf
+
+# Binary assets must not be line-ending converted.
+*.avi  binary
+*.eps  binary
+*.gif  binary
+*.jpg  binary
+*.jpeg binary
+*.mkv  binary
+*.mp4  binary
+*.pdf  binary
+*.png  binary
+*.swf  binary
+*.wmv  binary

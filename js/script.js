@@ -32,12 +32,35 @@ document.addEventListener('DOMContentLoaded', () => {
     const servicesTitleEl = document.getElementById('services-title');
     const servicesContentEl = document.getElementById('services-content');
     const tabContentContainer = document.getElementById('tab-content');
+    const screenReaderStatusEl = document.getElementById('screen-reader-status');
 
     const validLangs = ['en', 'ja'];
     const validTabNames = ['projects', 'publications', 'services', 'contact'];
     const validTabViewIds = ['projects-view', 'publications-view', 'services-view', 'contact-view'];
     const defaultLang = 'en';
     const defaultTabName = 'projects';
+    const tabButtons = [tabBtnProjects, tabBtnPublications, tabBtnServices, tabBtnContact];
+    const tabPanes = [projectsViewPane, publicationsViewPane, servicesViewPane, contactViewPane];
+
+    function escapeAttribute(value) {
+        return String(value || '').replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+    }
+
+    function getLanguageName(lang) {
+        return lang === 'ja' ? 'Japanese' : 'English';
+    }
+
+    function getPublicationActionLabel(action, item) {
+        return `${action} for ${item.title || 'Untitled'}`;
+    }
+
+    function getMailtoAddress(email) {
+        return String(email || '').replace(/\s*\[at\]\s*/i, '@').replace(/\s*\[dot\]\s*/gi, '.').replace(/\s+/g, '');
+    }
+
+    function announceStatus(message) {
+        if (screenReaderStatusEl) screenReaderStatusEl.textContent = message;
+    }
 
     async function loadAllData(lang) {
         const langToLoad = validLangs.includes(lang) ? lang : defaultLang;
@@ -91,7 +114,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const data = allData.ui;
 
         htmlEl.lang = currentLang; titleEl.textContent = data.meta.title; metaDescriptionEl.setAttribute('content', data.meta.description);
-        headerNameEl.textContent = data.header.name; langSwitchBtn.textContent = data.nav.lang_switch_text; langSwitchBtn.dataset.targetLang = data.nav.lang_switch_target;
+        headerNameEl.textContent = data.header.name; langSwitchBtn.textContent = data.nav.lang_switch_text; langSwitchBtn.dataset.targetLang = data.nav.lang_switch_target; langSwitchBtn.setAttribute('aria-label', `Switch language to ${getLanguageName(data.nav.lang_switch_target)}`);
         introParagraphEl.innerHTML = data.intro.text;
 
         if (teaserSectionEl) { if (data.teaser && data.teaser.show_teaser === true) { teaserSectionEl.style.display = ''; if (teaserAnimEl) teaserAnimEl.alt = data.teaser.alt_text || ''; } else { teaserSectionEl.style.display = 'none'; } }
@@ -119,7 +142,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function renderCategories(categories, lang) {
         if (!categoryFilterContainer) return; categoryFilterContainer.innerHTML = '';
-        categories.forEach(cat => { const button = document.createElement('button'); button.dataset.categoryId = cat.id; const logoHTML = cat.logo ? `<img src="${cat.logo}" alt="" loading="lazy">` : ''; button.innerHTML = `${logoHTML} ${cat.name || cat.id}`; button.addEventListener('click', () => handleFilterClick(cat.id)); categoryFilterContainer.appendChild(button); });
+        categories.forEach(cat => {
+            const button = document.createElement('button');
+            button.type = 'button';
+            button.dataset.categoryId = cat.id;
+            const logoHTML = cat.logo ? `<img src="${cat.logo}" alt="" loading="lazy">` : '';
+            button.innerHTML = `${logoHTML} ${cat.name || cat.id}`;
+            button.addEventListener('click', () => handleFilterClick(cat.id));
+            categoryFilterContainer.appendChild(button);
+        });
         updateActiveCategoryButton(currentFilter);
     }
 
@@ -134,7 +165,7 @@ document.addEventListener('DOMContentLoaded', () => {
         filteredProjects.forEach(project => {
             const card = document.createElement('article'); card.classList.add('project-card'); card.dataset.projectId = project.id;
             const institution = institutionsDef.find(inst => inst.id === project.institution_id);
-            let imagesHTML = ''; if (project.images && project.images.length > 0) { imagesHTML = `<div class="project-images">${project.images.map(img => `<img src="${img}" alt="${project.title || ''} image" loading="lazy">`).join('')}</div>`; }
+            let imagesHTML = ''; if (project.images && project.images.length > 0) { imagesHTML = `<div class="project-images">${project.images.map((img, index) => `<img src="${img}" alt="Project image ${index + 1} for ${escapeAttribute(project.title || 'Untitled Project')}" loading="lazy">`).join('')}</div>`; }
             let headerInfoHTML = '<div class="project-header-info">'; if (project.categories && project.categories.length > 0) { headerInfoHTML += `<div class="project-categories">${project.categories.map(catId => { const category = categoriesDef.find(c => c.id === catId); return `<span>${category ? category.name : catId}</span>`; }).join('')}</div>`; } if (institution && institution.url && institution.logo) { headerInfoHTML += `<div class="project-institution"><a href="${institution.url}" target="_blank" rel="noopener noreferrer" title="${institution.name || ''}"><img src="${institution.logo}" alt="${institution.name || ''} Logo" loading="lazy"></a></div>`; } headerInfoHTML += '</div>';
             let publicationsHTML = '';
             if (project.publication_ids && project.publication_ids.length > 0) {
@@ -143,16 +174,19 @@ document.addEventListener('DOMContentLoaded', () => {
                     publicationsHTML = `<div class="project-publications"><h5>${uiText.publications || 'Related Publications:'}</h5><ul>`;
                     publicationsHTML += projectPubs.map(pub => {
                         let primaryLinkIcon = ''; const linkText = getLinkTextForPubType(pub.type, uiText); const linkTarget = pub.pdf && pub.pdf.startsWith('http') ? 'target="_blank" rel="noopener noreferrer"' : '';
+                        const primaryLinkLabel = escapeAttribute(getPublicationActionLabel(linkText, pub));
+                        const videoLinkLabel = escapeAttribute(getPublicationActionLabel(uiText.video || 'Video', pub));
+                        const doiLinkLabel = escapeAttribute(getPublicationActionLabel(uiText.doi || 'DOI', pub));
                         if (pub.pdf) {
                             switch (pub.type) {
-                                case 'patent': primaryLinkIcon = `<a href="${pub.pdf}" ${linkTarget} title="${linkText}"><img src="img/icons/patent.png" alt="Patent" class="link-icon"></a>`; break;
-                                case 'link': primaryLinkIcon = `<a href="${pub.pdf}" ${linkTarget} title="${linkText}"><img src="img/icons/link.png" alt="Link" class="link-icon"></a>`; break;
-                                case 'thesis': primaryLinkIcon = `<a href="${pub.pdf}" ${linkTarget} title="${linkText}"><img src="img/icons/pdf.png" alt="Thesis" class="link-icon"></a>`; break;
-                                default: primaryLinkIcon = `<a href="${pub.pdf}" ${linkTarget} title="PDF"><img src="img/icons/pdf.png" alt="PDF" class="link-icon"></a>`; break;
+                                case 'patent': primaryLinkIcon = `<a href="${pub.pdf}" ${linkTarget} title="${primaryLinkLabel}" aria-label="${primaryLinkLabel}"><img src="img/icons/patent.png" alt="" class="link-icon"></a>`; break;
+                                case 'link': primaryLinkIcon = `<a href="${pub.pdf}" ${linkTarget} title="${primaryLinkLabel}" aria-label="${primaryLinkLabel}"><img src="img/icons/link.png" alt="" class="link-icon"></a>`; break;
+                                case 'thesis': primaryLinkIcon = `<a href="${pub.pdf}" ${linkTarget} title="${primaryLinkLabel}" aria-label="${primaryLinkLabel}"><img src="img/icons/pdf.png" alt="" class="link-icon"></a>`; break;
+                                default: primaryLinkIcon = `<a href="${pub.pdf}" ${linkTarget} title="${primaryLinkLabel}" aria-label="${primaryLinkLabel}"><img src="img/icons/pdf.png" alt="" class="link-icon"></a>`; break;
                             }
                         }
-                        const videoLinkIcon = pub.video ? `<a href="${pub.video}" target="_blank" ${pub.video.startsWith('http') ? 'rel="noopener noreferrer"' : ''} title="Video"><img src="img/icons/video.png" alt="Video" class="link-icon"></a>` : '';
-                        const doiLinkText = pub.doi ? `<a href="https://doi.org/${pub.doi}" target="_blank" rel="noopener noreferrer" title="DOI">${uiText.doi || 'DOI'}</a>` : '';
+                        const videoLinkIcon = pub.video ? `<a href="${pub.video}" target="_blank" ${pub.video.startsWith('http') ? 'rel="noopener noreferrer"' : ''} title="${videoLinkLabel}" aria-label="${videoLinkLabel}"><img src="img/icons/video.png" alt="" class="link-icon"></a>` : '';
+                        const doiLinkText = pub.doi ? `<a href="https://doi.org/${pub.doi}" target="_blank" rel="noopener noreferrer" title="${doiLinkLabel}" aria-label="${doiLinkLabel}">${uiText.doi || 'DOI'}</a>` : '';
                         return `<li class="pub-type-${pub.type || 'unknown'}" style="--item-icon: '${getIconForPubType(pub.type)}';"> <span class="pub-title">${pub.title || 'Untitled'}</span> ${pub.authors ? `<span class="pub-authors">${pub.authors}</span>` : ''} ${pub.venue ? `<span class="pub-venue">${pub.venue}${pub.year ? ', ' + pub.year : ''}</span>` : (pub.year ? `<span class="pub-venue">${pub.year}</span>` : '')} <div class="pub-links"> ${primaryLinkIcon} ${videoLinkIcon} ${doiLinkText} </div> ${pub.notes ? `<span class="pub-notes">${pub.notes}</span>` : ''} </li>`;
                     }).join('');
                     publicationsHTML += `</ul></div>`;
@@ -180,12 +214,15 @@ document.addEventListener('DOMContentLoaded', () => {
         const sortedPubs = [...filteredPubs].sort((a, b) => { return (b.year || 0) - (a.year || 0); });
         const fragment = document.createDocumentFragment(); let currentYear = null;
         sortedPubs.forEach(pub => {
-             if(pub.year && pub.year !== currentYear) { currentYear = pub.year; const yearLi = document.createElement('li'); yearLi.classList.add('year-header'); yearLi.innerHTML = `<span class="pub-year">${currentYear}</span>`; fragment.appendChild(yearLi); }
-             else if (!pub.year && currentYear !== 'unknown') { currentYear = 'unknown'; const yearLi = document.createElement('li'); yearLi.classList.add('year-header'); yearLi.innerHTML = `<span class="pub-year">${uiText.unknown_year || 'Unknown Year'}</span>`; fragment.appendChild(yearLi); }
+             if(pub.year && pub.year !== currentYear) { currentYear = pub.year; const yearLi = document.createElement('li'); yearLi.classList.add('year-header'); yearLi.innerHTML = `<span class="pub-year" role="heading" aria-level="3">${currentYear}</span>`; fragment.appendChild(yearLi); }
+             else if (!pub.year && currentYear !== 'unknown') { currentYear = 'unknown'; const yearLi = document.createElement('li'); yearLi.classList.add('year-header'); yearLi.innerHTML = `<span class="pub-year" role="heading" aria-level="3">${uiText.unknown_year || 'Unknown Year'}</span>`; fragment.appendChild(yearLi); }
              const li = document.createElement('li'); const icon = getIconForPubType(pub.type); const linkText = getLinkTextForPubType(pub.type, uiText); li.style.setProperty('--item-icon', `"${icon}"`); li.classList.add(`pub-type-${pub.type || 'unknown'}`);
-             const pdfLinkIcon = pub.pdf ? `<a href="${pub.pdf}" target="_blank" ${pub.pdf.startsWith('http') ? 'rel="noopener noreferrer"' : ''} title="${linkText}"><img src="img/icons/pdf.png" alt="${linkText}" class="link-icon"></a>` : '';
-             const videoLinkIcon = pub.video ? `<a href="${pub.video}" target="_blank" ${pub.video.startsWith('http') ? 'rel="noopener noreferrer"' : ''} title="Video"><img src="img/icons/video.png" alt="Video" class="link-icon"></a>` : '';
-             const doiLinkText = pub.doi ? `<a href="https://doi.org/${pub.doi}" target="_blank" rel="noopener noreferrer" title="DOI">${uiText.doi || 'DOI'}</a>` : '';
+             const pdfLinkLabel = escapeAttribute(getPublicationActionLabel(linkText, pub));
+             const videoLinkLabel = escapeAttribute(getPublicationActionLabel(uiText.video || 'Video', pub));
+             const doiLinkLabel = escapeAttribute(getPublicationActionLabel(uiText.doi || 'DOI', pub));
+             const pdfLinkIcon = pub.pdf ? `<a href="${pub.pdf}" target="_blank" ${pub.pdf.startsWith('http') ? 'rel="noopener noreferrer"' : ''} title="${pdfLinkLabel}" aria-label="${pdfLinkLabel}"><img src="img/icons/pdf.png" alt="" class="link-icon"></a>` : '';
+             const videoLinkIcon = pub.video ? `<a href="${pub.video}" target="_blank" ${pub.video.startsWith('http') ? 'rel="noopener noreferrer"' : ''} title="${videoLinkLabel}" aria-label="${videoLinkLabel}"><img src="img/icons/video.png" alt="" class="link-icon"></a>` : '';
+             const doiLinkText = pub.doi ? `<a href="https://doi.org/${pub.doi}" target="_blank" rel="noopener noreferrer" title="${doiLinkLabel}" aria-label="${doiLinkLabel}">${uiText.doi || 'DOI'}</a>` : '';
              li.innerHTML = `<div class="pub-details"> <span class="pub-title">${pub.title || 'Untitled'}</span> ${pub.authors ? `<span class="pub-authors">${pub.authors}</span>` : ''} ${pub.venue ? `<span class="pub-venue">${pub.venue}</span>` : ''} <div class="pub-links"> ${pdfLinkIcon} ${videoLinkIcon} ${doiLinkText} </div> ${pub.notes ? `<span class="pub-notes">${pub.notes}</span>` : ''} </div>`;
              fragment.appendChild(li);
         });
@@ -200,7 +237,8 @@ document.addEventListener('DOMContentLoaded', () => {
        const fragment = document.createDocumentFragment(); const sortedPatents = [...patents].sort((a,b) => (b.year || 0) - (a.year || 0) || (a.title || '').localeCompare(b.title || ''));
        sortedPatents.forEach(patent => {
            const li = document.createElement('li'); const icon = getIconForPubType('patent'); li.style.setProperty('--item-icon', `"${icon}"`); li.classList.add(`pub-type-patent`);
-           const patentLinkIcon = patent.pdf ? `<a href="${patent.pdf}" target="_blank" rel="noopener noreferrer" title="${uiText.patent_link || 'Patent Link'}"><img src="img/icons/patent.png" alt="Patent" class="link-icon"></a>` : '';
+           const patentLinkLabel = escapeAttribute(getPublicationActionLabel(uiText.patent_link || 'Patent Link', patent));
+           const patentLinkIcon = patent.pdf ? `<a href="${patent.pdf}" target="_blank" rel="noopener noreferrer" title="${patentLinkLabel}" aria-label="${patentLinkLabel}"><img src="img/icons/patent.png" alt="" class="link-icon"></a>` : '';
            li.innerHTML = `<div class="pub-details"> <span class="patent-title pub-title">${patent.title || 'Untitled Patent'}</span> <span class="patent-details pub-venue"> ${patent.venue || patent.number || ''} ${patent.date ? ` (${patent.date})` : (patent.year ? ` (${patent.year})` : '')} </span> ${patent.notes ? `<p class="patent-notes">${patent.notes}</p>` : ''} <div class="pub-links"> ${patentLinkIcon} </div> </div>`;
            fragment.appendChild(li);
        });
@@ -210,7 +248,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function renderContact(contact) {
          if (!contactDetailsContainer) return;
          let contactHTML = '';
-         if (contact.email) { const displayEmail = contact.email.replace('@', ' [at] '); contactHTML += `<p>Email: <a href="mailto:${contact.email}">${displayEmail}</a></p>`; }
+         if (contact.email) { const displayEmail = contact.email.replace('@', ' [at] '); const mailtoEmail = getMailtoAddress(contact.email); contactHTML += `<p>Email: <a href="mailto:${mailtoEmail}" aria-label="Email Fabrice Matulic">${displayEmail}</a></p>`; }
          if (contact.linkedin) { const profileName = contact.linkedin.split('/').filter(Boolean).pop() || 'Profile'; contactHTML += `<p>LinkedIn: <a href="${contact.linkedin}" target="_blank" rel="noopener noreferrer">${profileName}</a></p>`; }
          if (contact.address) { contactHTML += `<p>Address:<br>${contact.address}</p>`; }
          contactDetailsContainer.innerHTML = contactHTML;
@@ -221,21 +259,36 @@ document.addEventListener('DOMContentLoaded', () => {
     function handleFilterClick(categoryId) {
         if (!categoryFilterContainer) return; currentFilter = categoryId; console.log(`Filtering by: ${currentFilter}`);
         const { projects, ui, publications, patents } = loadedData;
-        if (projects && ui && publications && patents) { renderProjects(projects, ui.categories || [], ui.institutions || [], publications, patents, ui.ui_text || {}, currentFilter); updateActiveCategoryButton(currentFilter); }
+        if (projects && ui && publications && patents) {
+            renderProjects(projects, ui.categories || [], ui.institutions || [], publications, patents, ui.ui_text || {}, currentFilter);
+            updateActiveCategoryButton(currentFilter);
+            const activeCategory = (ui.categories || []).find(cat => cat.id === currentFilter);
+            const filteredCount = projects.filter(project => currentFilter === 'all' || (project.categories && project.categories.includes(currentFilter))).length;
+            announceStatus(`Showing ${filteredCount} project${filteredCount === 1 ? '' : 's'}${activeCategory ? ` in ${activeCategory.name}` : ''}.`);
+        }
         else { console.warn("Cannot filter projects, data not fully loaded."); }
         syncStateAndHash('projects-view', true);
     }
     function updateActiveCategoryButton(activeCategoryId) {
-        if (!categoryFilterContainer) return; const buttons = categoryFilterContainer.querySelectorAll('button'); buttons.forEach(button => { button.classList.toggle('active', button.dataset.categoryId === activeCategoryId); });
+        if (!categoryFilterContainer) return; const buttons = categoryFilterContainer.querySelectorAll('button'); buttons.forEach(button => { const isActive = button.dataset.categoryId === activeCategoryId; button.classList.toggle('active', isActive); button.setAttribute('aria-pressed', String(isActive)); });
     }
 
     // --- Tab UI Update Function ---
     function updateActiveTab(activeTabId) {
-        const buttons = [tabBtnProjects, tabBtnPublications, tabBtnServices, tabBtnContact];
-        const panes = [projectsViewPane, publicationsViewPane, servicesViewPane, contactViewPane];
         const viewIds = ['projects-view', 'publications-view', 'services-view', 'contact-view'];
-        buttons.forEach((button, index) => { if (button) button.classList.toggle('active', activeTabId === viewIds[index]); });
-        panes.forEach((pane, index) => { if (pane) pane.classList.toggle('active', activeTabId === viewIds[index]); });
+        tabButtons.forEach((button, index) => {
+            if (!button) return;
+            const isActive = activeTabId === viewIds[index];
+            button.classList.toggle('active', isActive);
+            button.setAttribute('aria-selected', String(isActive));
+            button.tabIndex = isActive ? 0 : -1;
+        });
+        tabPanes.forEach((pane, index) => {
+            if (!pane) return;
+            const isActive = activeTabId === viewIds[index];
+            pane.classList.toggle('active', isActive);
+            pane.hidden = !isActive;
+        });
     }
 
 
@@ -261,7 +314,39 @@ document.addEventListener('DOMContentLoaded', () => {
          if (!validTabViewIds.includes(targetTabViewId)) { targetTabViewId = 'projects-view'; } const targetTabName = targetTabViewId.replace('-view','');
         const langChanged = syncUIState(currentLang, targetTabName); if (updateHash && !langChanged) { updateURLHash(); }
     }
-    function handleTabClick(tabId) { syncStateAndHash(tabId, true); }
+    function handleTabClick(tabId) {
+        syncStateAndHash(tabId, true);
+        const activeButton = tabButtons.find(button => button && button.getAttribute('aria-controls') === tabId);
+        if (activeButton) announceStatus(`${activeButton.textContent} selected.`);
+    }
+    function handleTabKeydown(event) {
+        const enabledButtons = tabButtons.filter(Boolean);
+        const currentIndex = enabledButtons.indexOf(event.currentTarget);
+        if (currentIndex === -1) return;
+        let nextIndex = null;
+        switch (event.key) {
+            case 'ArrowRight':
+            case 'ArrowDown':
+                nextIndex = (currentIndex + 1) % enabledButtons.length;
+                break;
+            case 'ArrowLeft':
+            case 'ArrowUp':
+                nextIndex = (currentIndex - 1 + enabledButtons.length) % enabledButtons.length;
+                break;
+            case 'Home':
+                nextIndex = 0;
+                break;
+            case 'End':
+                nextIndex = enabledButtons.length - 1;
+                break;
+            default:
+                return;
+        }
+        event.preventDefault();
+        const nextButton = enabledButtons[nextIndex];
+        nextButton.focus();
+        handleTabClick(nextButton.getAttribute('aria-controls'));
+    }
     async function handleHashChange() {
         console.log(`Hash change detected: ${window.location.hash}`); const { lang: targetLang, tabName: targetTabName } = parseHash(window.location.hash);
         const langActuallyChanged = syncUIState(targetLang, targetTabName);
@@ -294,6 +379,7 @@ document.addEventListener('DOMContentLoaded', () => {
             if (tabBtnPublications) tabBtnPublications.addEventListener('click', () => handleTabClick('publications-view'));
             if (tabBtnServices) tabBtnServices.addEventListener('click', () => handleTabClick('services-view')); // Add listener
             if (tabBtnContact) tabBtnContact.addEventListener('click', () => handleTabClick('contact-view'));
+            tabButtons.forEach(button => { if (button) button.addEventListener('keydown', handleTabKeydown); });
             window.addEventListener('hashchange', handleHashChange);
         } else { console.error("Initialization failed: Could not load initial data."); }
     }
